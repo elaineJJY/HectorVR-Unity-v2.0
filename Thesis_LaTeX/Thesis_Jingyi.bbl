@@ -1,0 +1,636 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Casper:2003tk}{article}{}
+      \name{author}{2}{}{%
+        {{hash=24f42bedb6a5dc9b0e49f98f19bf52a4}{%
+           family={Casper},
+           familyi={C\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=602f698a574056f9be09093c13025474}{%
+           family={Murphy},
+           familyi={M\bibinitperiod},
+           given={R.\bibnamedelimi R.},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{2d2061d7785b991222a77ded10beee37}
+      \strng{fullhash}{2d2061d7785b991222a77ded10beee37}
+      \strng{bibnamehash}{2d2061d7785b991222a77ded10beee37}
+      \strng{authorbibnamehash}{2d2061d7785b991222a77ded10beee37}
+      \strng{authornamehash}{2d2061d7785b991222a77ded10beee37}
+      \strng{authorfullhash}{2d2061d7785b991222a77ded10beee37}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics)}
+      \field{isbn}{1941-0492}
+      \field{journaltitle}{IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics)}
+      \field{number}{3}
+      \field{title}{Human-robot interactions during the robot-assisted urban search and rescue response at the World Trade Center}
+      \field{volume}{33}
+      \field{year}{2003}
+      \field{pages}{367\bibrangedash 385}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1109/TSMCB.2003.811794
+      \endverb
+    \endentry
+    \entry{Murphy:2012th}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=602f698a574056f9be09093c13025474}{%
+           family={Murphy},
+           familyi={M\bibinitperiod},
+           given={R.\bibnamedelimi R.},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{602f698a574056f9be09093c13025474}
+      \strng{fullhash}{602f698a574056f9be09093c13025474}
+      \strng{bibnamehash}{602f698a574056f9be09093c13025474}
+      \strng{authorbibnamehash}{602f698a574056f9be09093c13025474}
+      \strng{authornamehash}{602f698a574056f9be09093c13025474}
+      \strng{authorfullhash}{602f698a574056f9be09093c13025474}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2012 IEEE/RSJ International Conference on Intelligent Robots and Systems}
+      \field{isbn}{2153-0866}
+      \field{journaltitle}{2012 IEEE/RSJ International Conference on Intelligent Robots and Systems}
+      \field{title}{A decade of rescue robots}
+      \field{year}{2012}
+      \field{pages}{5448\bibrangedash 5449}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1109/IROS.2012.6386301
+      \endverb
+    \endentry
+    \entry{Huang:2011wq}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=eff7be370d61002309293aec5b34c65d}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Ya-Wen},
+           giveni={Y\bibinithyphendelim W\bibinitperiod}}}%
+        {{hash=221edc260255b2224af38516420eff23}{%
+           family={Sasaki},
+           familyi={S\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=f4b2960d65c8e258ac1318c7934d64c7}{%
+           family={Harakawa},
+           familyi={H\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=fbb6dddf9c292bfba3f8feb44b035916}{%
+           family={Fukushima},
+           familyi={F\bibinitperiod},
+           given={E.\bibnamedelimi F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=19873796407cada54542df304a7876c6}{%
+           family={Hirose},
+           familyi={H\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{7fdae11761b20d2e9a1e4a810327a67a}
+      \strng{fullhash}{de8d490978c24f11c21605744f05e041}
+      \strng{bibnamehash}{7fdae11761b20d2e9a1e4a810327a67a}
+      \strng{authorbibnamehash}{7fdae11761b20d2e9a1e4a810327a67a}
+      \strng{authornamehash}{7fdae11761b20d2e9a1e4a810327a67a}
+      \strng{authorfullhash}{de8d490978c24f11c21605744f05e041}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{OCEANS'11 MTS/IEEE KONA}
+      \field{isbn}{0197-7385}
+      \field{journaltitle}{OCEANS'11 MTS/IEEE KONA}
+      \field{title}{Operation of underwater rescue robot anchor diver III during the 2011 Tohoku Earthquake and Tsunami}
+      \field{year}{2011}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.23919/OCEANS.2011.6107198
+      \endverb
+    \endentry
+    \entry{Murphy:2004wl}{article}{}
+      \name{author}{1}{}{%
+        {{hash=602f698a574056f9be09093c13025474}{%
+           family={Murphy},
+           familyi={M\bibinitperiod},
+           given={R.\bibnamedelimi R.},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{602f698a574056f9be09093c13025474}
+      \strng{fullhash}{602f698a574056f9be09093c13025474}
+      \strng{bibnamehash}{602f698a574056f9be09093c13025474}
+      \strng{authorbibnamehash}{602f698a574056f9be09093c13025474}
+      \strng{authornamehash}{602f698a574056f9be09093c13025474}
+      \strng{authorfullhash}{602f698a574056f9be09093c13025474}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE Transactions on Systems, Man, and Cybernetics, Part C (Applications and Reviews)}
+      \field{isbn}{1558-2442}
+      \field{journaltitle}{IEEE Transactions on Systems, Man, and Cybernetics, Part C (Applications and Reviews)}
+      \field{number}{2}
+      \field{title}{Human-robot interaction in rescue robotics}
+      \field{volume}{34}
+      \field{year}{2004}
+      \field{pages}{138\bibrangedash 153}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1109/TSMCC.2004.826267
+      \endverb
+    \endentry
+    \entry{10.1145/1228716.1228718}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=498d336d32553e42e5e3cb8d78984b7a}{%
+           family={Hoffman},
+           familyi={H\bibinitperiod},
+           given={Guy},
+           giveni={G\bibinitperiod}}}%
+        {{hash=3e669d3ed6039d251fbfbf2f27a2a1f5}{%
+           family={Breazeal},
+           familyi={B\bibinitperiod},
+           given={Cynthia},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Arlington, Virginia, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{0fb92c17cd4ef3eabd18276456e3cc8a}
+      \strng{fullhash}{0fb92c17cd4ef3eabd18276456e3cc8a}
+      \strng{bibnamehash}{0fb92c17cd4ef3eabd18276456e3cc8a}
+      \strng{authorbibnamehash}{0fb92c17cd4ef3eabd18276456e3cc8a}
+      \strng{authornamehash}{0fb92c17cd4ef3eabd18276456e3cc8a}
+      \strng{authorfullhash}{0fb92c17cd4ef3eabd18276456e3cc8a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A crucial skill for fluent action meshing in human team activity is a learned and calculated selection of anticipatory actions. We believe that the same holds for robotic teammates, if they are to perform in a similarly fluent manner with their human counterparts.In this work, we propose an adaptive action selection mechanism for a robotic teammate, making anticipatory decisions based on the confidence of their validity and their relative risk. We predict an improvement in task efficiency and fluency compared to a purely reactive process.We then present results from a study involving untrained human subjects working with a simulated version of a robot using our system. We show a significant improvement in best-case task efficiency when compared to a group of users working with a reactive agent, as well as a significant difference in the perceived commitment of the robot to the team and its contribution to the team's uency and success. By way of explanation, we propose a number of fluency metrics that differ significantly between the two study groups.}
+      \field{booktitle}{Proceedings of the ACM/IEEE International Conference on Human-Robot Interaction}
+      \field{isbn}{9781595936172}
+      \field{series}{HRI '07}
+      \field{title}{Effects of Anticipatory Action on Human-Robot Teamwork Efficiency, Fluency, and Perception of Team}
+      \field{year}{2007}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/1228716.1228718
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/1228716.1228718
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/1228716.1228718
+      \endverb
+      \keyw{fluency,teamwork,human-robot interaction,anticipatory action selection}
+    \endentry
+    \entry{Sarkar:2017tt}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=3ff4d087ac92534a82647e5f3761faa1}{%
+           family={Sarkar},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=671ed4b24ba5b81f54e96bb06bcece6a}{%
+           family={Patil},
+           familyi={P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=aabef0b03fd72b14ee891e8f6e55bed5}{%
+           family={Hartalkar},
+           familyi={H\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8064a8f3c1e30ecd1803e3b544e9b227}{%
+           family={Wasekar},
+           familyi={W\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{852bc4b1ccb8b219a47a7737cafe8f6c}
+      \strng{fullhash}{142e50c5093efd562794893da41611cd}
+      \strng{bibnamehash}{852bc4b1ccb8b219a47a7737cafe8f6c}
+      \strng{authorbibnamehash}{852bc4b1ccb8b219a47a7737cafe8f6c}
+      \strng{authornamehash}{852bc4b1ccb8b219a47a7737cafe8f6c}
+      \strng{authorfullhash}{142e50c5093efd562794893da41611cd}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 Second International Conference on Electrical, Computer and Communication Technologies (ICECCT)}
+      \field{journaltitle}{2017 Second International Conference on Electrical, Computer and Communication Technologies (ICECCT)}
+      \field{title}{Earthquake rescue robot: A purview to life}
+      \field{year}{2017}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/ICECCT.2017.8118044
+      \endverb
+    \endentry
+    \entry{Faisal:2019uu}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=6b25370cb9fcdec316e8978d451fa13e}{%
+           family={Faisal},
+           familyi={F\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=502b48922b5ffc4286ac00beb6c4cceb}{%
+           family={Hossain},
+           familyi={H\bibinitperiod},
+           given={S.\bibnamedelimi A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5731545f2c569e618b319bb524b81966}
+      \strng{fullhash}{5731545f2c569e618b319bb524b81966}
+      \strng{bibnamehash}{5731545f2c569e618b319bb524b81966}
+      \strng{authorbibnamehash}{5731545f2c569e618b319bb524b81966}
+      \strng{authornamehash}{5731545f2c569e618b319bb524b81966}
+      \strng{authorfullhash}{5731545f2c569e618b319bb524b81966}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2019 1st International Conference on Advances in Science, Engineering and Robotics Technology (ICASERT)}
+      \field{journaltitle}{2019 1st International Conference on Advances in Science, Engineering and Robotics Technology (ICASERT)}
+      \field{title}{DOORMOR: A Functional Prototype of a Manual Search and Rescue Robot}
+      \field{year}{2019}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICASERT.2019.8934515
+      \endverb
+    \endentry
+    \entry{Sousa:2017tn}{book}{}
+      \name{author}{14}{}{%
+        {{hash=2a1ae660f49824f2d1243c2f980f22a5}{%
+           family={Sousa},
+           familyi={S\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3c905b0a87a6c84c634b5f94afaa9579}{%
+           family={Esteves},
+           familyi={E\bibinitperiod},
+           given={Tiago},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8d542407139359fd3d0041ed711fa6d2}{%
+           family={Campos},
+           familyi={C\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5a0f730c1fde5fa8fe3349ede83c8000}{%
+           family={Duarte},
+           familyi={D\bibinitperiod},
+           given={Fábio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0dd2bc3feb26c7841c121fa51038fd97}{%
+           family={Santos},
+           familyi={S\bibinitperiod},
+           given={Joana},
+           giveni={J\bibinitperiod}}}%
+        {{hash=99c2f65ca8f5a9132445138b24d44b42}{%
+           family={Leao},
+           familyi={L\bibinitperiod},
+           given={Joao},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6e1a1be7ffd099dace7dffbe66facd28}{%
+           family={Xavier},
+           familyi={X\bibinitperiod},
+           given={José},
+           giveni={J\bibinitperiod}}}%
+        {{hash=42086be48d6246bb163ea5c30e6cec3a}{%
+           family={Matos},
+           familyi={M\bibinitperiod},
+           given={Luı́s},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d3b85856adb066958ba087946c4c1e05}{%
+           family={Camarneiro},
+           familyi={C\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c2288d661116a6ae8799642584006294}{%
+           family={Penas},
+           familyi={P\bibinitperiod},
+           given={Marcelo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a45d1d9616d655c4be5dd3ba0d92d322}{%
+           family={Miranda},
+           familyi={M\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4047ee6235adca502c24f37317e79d8e}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3776aba913020abe645be926ae87e037}{%
+           family={Neves},
+           familyi={N\bibinitperiod},
+           given={António},
+           giveni={A\bibinitperiod}}}%
+        {{hash=60deb53ae5bd679921f49a9549ed56c8}{%
+           family={Luı́s},
+           familyi={L\bibinitperiod},
+           given={Teixeira},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{93d5680f7e42bd5eb824c2900af84f52}
+      \strng{fullhash}{bb04629eaf34c883c9b389bf76d7f876}
+      \strng{bibnamehash}{93d5680f7e42bd5eb824c2900af84f52}
+      \strng{authorbibnamehash}{93d5680f7e42bd5eb824c2900af84f52}
+      \strng{authornamehash}{93d5680f7e42bd5eb824c2900af84f52}
+      \strng{authorfullhash}{bb04629eaf34c883c9b389bf76d7f876}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-319-68194-8}
+      \field{journaltitle}{Lecture Notes in Computational Vision and Biomechanics}
+      \field{month}{10}
+      \field{title}{Human-Robot Interaction Based on Gestures for Service Robots}
+      \field{volume}{27}
+      \field{year}{2017}
+      \field{pages}{700\bibrangedash 709}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1007/978-3-319-68195-5{\_}76
+      \endverb
+      \warn{\item Entry 'Sousa:2017tn' (BibTexDatei.bib): Invalid format '2017/10/18' of date field 'date' - ignoring}
+    \endentry
+    \entry{10.1145/2157689.2157818}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=af137747f0b7c60b5f19a8827f74f728}{%
+           family={Giusti},
+           familyi={G\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=72404d611b083da0641f8d8a58ce3a2a}{%
+           family={Nagi},
+           familyi={N\bibinitperiod},
+           given={Jawad},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5299cade0838ea444eefc4a9e30510ab}{%
+           family={Gambardella},
+           familyi={G\bibinitperiod},
+           given={Luca\bibnamedelima M.},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=1e7c89e2c5a1aaac540a9ff594b3f3c6}{%
+           family={Bonardi},
+           familyi={B\bibinitperiod},
+           given={Stéphane},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f48c37d39edde940be546775d6a8a268}{%
+           family={Di\bibnamedelima Caro},
+           familyi={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Gianni\bibnamedelima A.},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston, Massachusetts, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{1e5b2fac05996508fd89250003635240}
+      \strng{fullhash}{2c281dfaf8d4f28ffbfbe4aee8e1463d}
+      \strng{bibnamehash}{1e5b2fac05996508fd89250003635240}
+      \strng{authorbibnamehash}{1e5b2fac05996508fd89250003635240}
+      \strng{authornamehash}{1e5b2fac05996508fd89250003635240}
+      \strng{authorfullhash}{2c281dfaf8d4f28ffbfbe4aee8e1463d}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Seventh Annual ACM/IEEE International Conference on Human-Robot Interaction}
+      \field{isbn}{9781450310635}
+      \field{series}{HRI '12}
+      \field{title}{Human-Swarm Interaction through Distributed Cooperative Gesture Recognition}
+      \field{year}{2012}
+      \field{pages}{401\bibrangedash 402}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1145/2157689.2157818
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/2157689.2157818
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/2157689.2157818
+      \endverb
+      \keyw{swarm robotics,gesture recognition,distributed consensus}
+    \endentry
+    \entry{Nagi:2014vu}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=a5d865bc62dbc0b6ae20eef35f1af57b}{%
+           family={Nagi},
+           familyi={N\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8cd627d0a35382c0d35d602d86afdce4}{%
+           family={Giusti},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fdc59763ebfde507299954f894bd75e3}{%
+           family={Gambardella},
+           familyi={G\bibinitperiod},
+           given={L.\bibnamedelimi M.},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=08489c8f66f945176fa6549259ba6cfb}{%
+           family={Caro},
+           familyi={C\bibinitperiod},
+           given={G.\bibnamedelimi A.\bibnamedelimi Di},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{5dabb2f532c236207d9500f51f2464ee}
+      \strng{fullhash}{70e1c4be682b7f97ffe622e535a01bc6}
+      \strng{bibnamehash}{5dabb2f532c236207d9500f51f2464ee}
+      \strng{authorbibnamehash}{5dabb2f532c236207d9500f51f2464ee}
+      \strng{authornamehash}{5dabb2f532c236207d9500f51f2464ee}
+      \strng{authorfullhash}{70e1c4be682b7f97ffe622e535a01bc6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2014 IEEE/RSJ International Conference on Intelligent Robots and Systems}
+      \field{isbn}{2153-0866}
+      \field{journaltitle}{2014 IEEE/RSJ International Conference on Intelligent Robots and Systems}
+      \field{title}{Human-swarm interaction using spatial gestures}
+      \field{year}{2014}
+      \field{pages}{3834\bibrangedash 3841}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/IROS.2014.6943101
+      \endverb
+    \endentry
+    \entry{Pourmehr:2013ta}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=e60588a1efdaa5d41a872ff4652da4f0}{%
+           family={Pourmehr},
+           familyi={P\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7b0c14575af6ec41d91d802d17a3b0c0}{%
+           family={Monajjemi},
+           familyi={M\bibinitperiod},
+           given={V.\bibnamedelimi M.},
+           giveni={V\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=503e8bb96112c7358b6dbcc8bcaee2b3}{%
+           family={Vaughan},
+           familyi={V\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=814e6143c6eae447be763207bf90db1d}{%
+           family={Mori},
+           familyi={M\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{23bfe99433efae7931f308ecf4682d45}
+      \strng{fullhash}{12d5ab905152014be664bb20d0109612}
+      \strng{bibnamehash}{23bfe99433efae7931f308ecf4682d45}
+      \strng{authorbibnamehash}{23bfe99433efae7931f308ecf4682d45}
+      \strng{authornamehash}{23bfe99433efae7931f308ecf4682d45}
+      \strng{authorfullhash}{12d5ab905152014be664bb20d0109612}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2013 IEEE/RSJ International Conference on Intelligent Robots and Systems}
+      \field{isbn}{2153-0866}
+      \field{journaltitle}{2013 IEEE/RSJ International Conference on Intelligent Robots and Systems}
+      \field{title}{``You two! Take off!'': Creating, modifying and commanding groups of robots using face engagement and indirect speech in voice commands}
+      \field{year}{2013}
+      \field{pages}{137\bibrangedash 142}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/IROS.2013.6696344
+      \endverb
+    \endentry
+    \entry{Ma:2015wu}{article}{}
+      \name{author}{4}{}{%
+        {{hash=3ecf5faffffaeea2ad2777739c1d9ad9}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1f26f664835ac6c347db22001b657f1a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0c9612fb156582c279b0c07f528ec793}{%
+           family={Cichocki},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e7af2b7ed63d69b81ade7574beda4d53}{%
+           family={Matsuno},
+           familyi={M\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{601fbbf845e15b2b130df4d37fbc98fd}
+      \strng{fullhash}{cfc5c12a332b1c313bbb2a5ed2de1ca6}
+      \strng{bibnamehash}{601fbbf845e15b2b130df4d37fbc98fd}
+      \strng{authorbibnamehash}{601fbbf845e15b2b130df4d37fbc98fd}
+      \strng{authornamehash}{601fbbf845e15b2b130df4d37fbc98fd}
+      \strng{authorfullhash}{cfc5c12a332b1c313bbb2a5ed2de1ca6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE Transactions on Biomedical Engineering}
+      \field{isbn}{1558-2531}
+      \field{journaltitle}{IEEE Transactions on Biomedical Engineering}
+      \field{number}{3}
+      \field{title}{A Novel EOG/EEG Hybrid Human--Machine Interface Adopting Eye Movements and ERPs: Application to Robot Control}
+      \field{volume}{62}
+      \field{year}{2015}
+      \field{pages}{876\bibrangedash 889}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TBME.2014.2369483
+      \endverb
+    \endentry
+    \entry{SOARES20151656}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5a81b5ea9f67aa4dbcdc17c006a9f940}{%
+           family={Soares},
+           familyi={S\bibinitperiod},
+           given={João},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9e0d6d6c53faa8e45c03d63319907398}{%
+           family={Vale},
+           familyi={V\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=195895b03409154732f59af267582044}{%
+           family={Ventura},
+           familyi={V\bibinitperiod},
+           given={Rodrigo},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b5621b85dad0969a8f3da75393c20484}
+      \strng{fullhash}{b5621b85dad0969a8f3da75393c20484}
+      \strng{bibnamehash}{b5621b85dad0969a8f3da75393c20484}
+      \strng{authorbibnamehash}{b5621b85dad0969a8f3da75393c20484}
+      \strng{authornamehash}{b5621b85dad0969a8f3da75393c20484}
+      \strng{authorfullhash}{b5621b85dad0969a8f3da75393c20484}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The remote handling (RH) plays an important role in nuclear test facilities, such as in ITER, for in-vessel and ex-vessel maintenance operations. Unexpected situations may occur when RH devices fail. Since no human being is allowed during the RH operations, a Multi-purpose Rescue Vehicle (MPRV) must be required for providing support in site. This paper proposes a design of a MPRV, i.e., a mobile platform equipped with different sensors and two manipulators with different sets of end-effectors. A human--machine interface is also proposed to remotely operate the MPRV and to carry out rescue and recovery operations.}
+      \field{issn}{0920-3796}
+      \field{journaltitle}{Fusion Engineering and Design}
+      \field{note}{Proceedings of the 28th Symposium On Fusion Technology (SOFT-28)}
+      \field{title}{A Multi-purpose Rescue Vehicle and a human--robot interface architecture for remote assistance in ITER}
+      \field{volume}{98-99}
+      \field{year}{2015}
+      \field{pages}{1656\bibrangedash 1659}
+      \range{pages}{4}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.fusengdes.2015.06.148
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S092037961530199X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S092037961530199X
+      \endverb
+      \keyw{ITER,Remote handling,Rescue and recovery,Maintenance,Interface}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
