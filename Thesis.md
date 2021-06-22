@@ -1,13 +1,36 @@
+# 更新点
 
+1. ~~菜单可移动： wie oculus 里的菜单~~
+2. 地图vs 雷达  Layer：利用collidor 更改layer  仅30m可看
+3. 地图重新改一下  变小：每个场景相似但不同
+4. camera 看不见 用户的（）也是layer
+5. set target/follow 人：用假功能：自动寻路  NavMesh
+6. 距离（）
+
+
+
+Zeit：5 min akku
+
+10 Taerget
+
+4 Block
+
+记录的点：
+
+Distance：移动距离
+
+Anzahl ：vorbei  aber nicht rescue
+
+Collidor times
 
 ## Thesis
 
-1. Länge: 20-45 Seite? (vielleicht 40 Seite?)
+1. Länge: 20-45 Seite? (inhalt ist wichtiger  20 ist auch okay)
 2. Latex Template(teilweise auf deutsch und Format)
 3. Anmeldung & genaue Title
 4. Zeitplan
 5. Feedback/Korrektur/Hilfe für Thesis
-6. Präsentation(heimatland)
+6. Präsentation(heimatland)  ok
 
 
 
@@ -15,7 +38,7 @@
 
 1. ROS
 	- weg machen? Oder nur über Position Synchronismus
-2. emergenCITY?
+2. emergenCITY? (1 satz)
 3. Geliederung überprüfen
 
 
@@ -24,12 +47,12 @@
 
 1. ROS (nur in Simulation Sccene, nicht in Test Scenes)
 2. Camera creator nicht active(einfach weg machen oder)
-3. Commentar/ Code Quality von Project
+3. Commentar/ Code Quality von Project(写一下)
 4. Vorbereitung und Ablauf über Nutzerstudie
-	+ Vorstellung Video? 
+	+ Vorstellung Video? （list  ）
 	+ Fragebogen
-	+ wie viele Leute (woher kommen diese Leute)
-	+ machen wir zusammen oder
+	+ wie viele Leute (woher kommen diese Leute)  4*n===>8-16
+	+ machen wir zusammen oder （allein）
 
 
 
@@ -43,7 +66,7 @@
 
 # Introduction
 
-
+1.5 Seite
 
 > ##### Rescue Robot
 >
@@ -121,10 +144,16 @@ Among them, VR has gained a lot of attention due to its immersion and the intera
 ## 2. System Architecture
 
 > - Compurter Information: CPU,GPU
-> - HTC Vive
+>
+> - HTC Vive（半页）
+>
 > - ROS and Robot
+>
 > - Unity VR engine & SteamVR
+>
 > - [UML/ Relationship photo]
+>
+> 	
 
 
 

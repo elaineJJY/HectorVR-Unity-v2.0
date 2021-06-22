@@ -1,11 +1,12 @@
 % !TeX program = lualatex
+
 \documentclass[
 	ngerman,
 	ruledheaders=section,%Ebene bis zu der die Überschriften mit Linien abgetrennt werden, vgl. DEMO-TUDaPub
 	class=report,% Basisdokumentenklasse. Wählt die Korrespondierende KOMA-Script Klasse
 	thesis={type=bachelor},% Dokumententyp Thesis, für Dissertationen siehe die Demo-Datei DEMO-TUDaPhd
 	accentcolor=9c,% Auswahl der Akzentfarbe
-	custommargins=true,% Ränder werden mithilfe von typearea automatisch berechnet
+	custommargins=false,% Ränder werden mithilfe von typearea automatisch berechnet
 	marginpar=false,% Kopfzeile und Fußzeile erstrecken sich nicht über die Randnotizspalte
 	%BCOR=5mm,%Bindekorrektur, falls notwendig
 	parskip=half-,%Absatzkennzeichnung durch Abstand vgl. KOMA-Script
@@ -63,62 +64,36 @@
 \begin{document}
 
 \Metadata{
-	title= TUDaThesis - Abschlussarbeiten im CD der TU Darmstadt,
+	title= Concepts for operating ground based rescue robots using virtual reality,
 	author=Jingyi Jia
 }
 
-\title{TUDaThesis -- Abschlussarbeiten im CD der TU Darmstadt}
+\title{Concepts for operating ground based rescue robots using virtual reality}
 %\subtitle{\LaTeX{} using TU Darmstadt's Corporate Design}
 \author{Jingyi Jia}%optionales Argument ist die Signatur,
 \birthplace{Shanghai, China}%Geburtsort, bei Dissertationen zwingend notwendig
-\reviewer{Gutachter 1 \and Gutachter 2 \and noch einer \and falls das immernoch nicht reicht}%Gutachter
+\reviewer{Prof. Dr. Max Mühlhäuser \and Julius von Willich}%Gutachter
 
-%Diese Felder erden untereinander auf der Titelseite platziert.
-%\department ist eine notwendige Angabe, siehe auch dem Abschnitt `Abweichung von den Vorgaben für die Titelseite'
+
 \department{inf} % Das Kürzel wird automatisch ersetzt und als Studienfach gewählt, siehe Liste der Kürzel im Dokument.
 \institute{Telekooperation}
-\group{Jingyi Jia}
+\group{Prof. Dr. Max Mühlhäuser}
 
 \submissiondate{\today}
 \examdate{\today}
 
-% Hinweis zur Lizenz:
-% TUDa-CI verwendet momentan die Lizenz CC BY-NC-ND 2.0 DE als Voreinstellung.
-% Die TU Darmstadt hat jedoch die Empfehlung von dieser auf die liberalere
-% CC BY 4.0 geändert. Diese erlaubt eine Verwendung bearbeiteter Versionen und
-% die kommerzielle Nutzung.
-% TUDa-CI wird im nächsten größeren Release ebenfalls diese Anpassung vornehmen.
-% Aus diesem Grund wird empfohlen die Lizenz manuell auszuwählen.
-% \tuprints{urn=1234,printid=12345,doi=10.25534/tuprints-1234,license=cc-by-4.0}
-% To see furhter information on the license option in English, remove the license= key and pay attention to the warning & help message.
 
-% \dedication{Für alle, die \TeX{} nutzen.}
 \maketitle
-\affidavit% oder \affidavit[digital] falls eine rein digitale Abgabe vorgesehen ist.
+\affidavit
 \tableofcontents
 
-\chapter{Introduction}
-In recent years, natural disasters such as earthquakes, tsunamis and potential nuclear, chemical, biological and explosives have seriously threatened the safety of human life and property. While the number of various disasters has increased, their severity, diversity and complexity have also gradually increased. The 72h after a disaster is the golden rescue time, but the unstructured environment of the disaster site makes it difficult for rescuers to work quickly, efficiently and safely.
+\input{sections/abstract.tex}
+\input{sections/introduction.tex}
+\input{sections/related_work.tex}
+\input{sections/implementation.tex}
+\input{sections/evaluate.tex}
+\input{sections/conclusion.tex}
 
-Rescue robots have the advantages of high mobility and handling breaking capacity, can work continuously to improve the efficiency of search and rescue, and can achieve the detection of graph, sound, gas and temperature within the ruins by carrying a variety of sensors, etc.
-Moreover, the robot rescue can assist or replace the rescuers to avoid the injuries caused by the secondary collapse and reduce the risk of rescuers. Therefore, rescue robots have become an important development direction.
-
-In fact, rescue robots have been put to use in a number of disaster scenarios. The Center for Robot-Assisted Search and Rescue (CRASAR) used rescue robots for Urban Search and Rescue (USAR) task during the World Trade Center collapse in 2001 \cite{Casper:2003tk} and has employed rescue robots at multiple disaster sites in the years since to assist in finding survivors, inspecting buildings and scouting the site environment etc \cite{Murphy:2012th}. Anchor Diver III was utilized as underwater support to search for bodies drowned at sea after the 2011 Tohoku Earthquake and Tsunami \cite{Huang:2011wq}.
-
-Considering the training time and space constraints for rescuers \cite{Murphy:2004wl}, and the goal of eﬃciency and ﬂuency collaboration \cite{10.1145/1228716.1228718}, the appropriate human-robot interaction approach deserves to be investigated. Some of the existing human-computer interaction methods are Android software \cite{Sarkar:2017tt} \cite{Faisal:2019uu}, gesture recognition\cite{Sousa:2017tn} \cite{10.1145/2157689.2157818} \cite{Nagi:2014vu}, facial voice recognition \cite{Pourmehr:2013ta}, adopting eye movements \cite{Ma:2015wu}, Augmented Reality(AR)\cite{SOARES20151656} and Virtual Reality(VR), etc.
-
-
-\chapter{Background}
-
-\chapter{Implementation}
-\section{1}
-\section{2}
-
-\chapter{Evaluation}
-\section{1}
-\section{2}
-
-\chapter{Conclusions and future work}
 
 
 \printbibliography
