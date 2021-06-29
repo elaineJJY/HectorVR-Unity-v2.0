@@ -630,6 +630,191 @@
       \endverb
       \keyw{ITER,Remote handling,Rescue and recovery,Maintenance,Interface}
     \endentry
+    \entry{Villani:2018ub}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=48001c6278eb65ad495a29c976af698e}{%
+           family={Villani},
+           familyi={V\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=67434ab2c437bfdf93f435fd84ca0cc6}{%
+           family={Capelli},
+           familyi={C\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=9ab6e89c00ad5e5ad37a0379d6daa625}{%
+           family={Sabattini},
+           familyi={S\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{9da4e9b79b534f3086fc8bb52a546019}
+      \strng{fullhash}{9da4e9b79b534f3086fc8bb52a546019}
+      \strng{bibnamehash}{9da4e9b79b534f3086fc8bb52a546019}
+      \strng{authorbibnamehash}{9da4e9b79b534f3086fc8bb52a546019}
+      \strng{authornamehash}{9da4e9b79b534f3086fc8bb52a546019}
+      \strng{authorfullhash}{9da4e9b79b534f3086fc8bb52a546019}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 27th IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN)}
+      \field{isbn}{1944-9437}
+      \field{journaltitle}{2018 27th IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN)}
+      \field{title}{Use of Virtual Reality for the Evaluation of Human-Robot Interaction Systems in Complex Scenarios}
+      \field{year}{2018}
+      \field{pages}{422\bibrangedash 427}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ROMAN.2018.8525738
+      \endverb
+    \endentry
+    \entry{Liu:2017tw}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=eaa8c2958ef50eb052d8d0efab26e226}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+        {{hash=79fb011e0dadbcfb5cf607ed18fee288}{%
+           family={Rakita},
+           familyi={R\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5d3fc36f249c2e926e0325ef98e98d45}{%
+           family={Mutlu},
+           familyi={M\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=169660829d261671543ca267c8115886}{%
+           family={Gleicher},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{6c3e3ba7b769f3fa61a4f0c4df5ee474}
+      \strng{fullhash}{c3648edfc2e773613468159c1d337883}
+      \strng{bibnamehash}{6c3e3ba7b769f3fa61a4f0c4df5ee474}
+      \strng{authorbibnamehash}{6c3e3ba7b769f3fa61a4f0c4df5ee474}
+      \strng{authornamehash}{6c3e3ba7b769f3fa61a4f0c4df5ee474}
+      \strng{authorfullhash}{c3648edfc2e773613468159c1d337883}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 26th IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN)}
+      \field{isbn}{1944-9437}
+      \field{journaltitle}{2017 26th IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN)}
+      \field{title}{Understanding human-robot interaction in virtual reality}
+      \field{year}{2017}
+      \field{pages}{751\bibrangedash 757}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/ROMAN.2017.8172387
+      \endverb
+    \endentry
+    \entry{Wang:2017uy}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=f94399510b1be6d7fab7d889d00b68d8}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=68f0988326aeeca2e5444dcaf314ca52}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a3dc9bcfb5487bf8014255e1339e1a5a}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=32e563370422457790db030ab2c13183}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=607679fb04a20d41a7ca52add8c34564}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=40514c5e084b29e34830e7e01add0cac}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b4ba204dbe548373613f21acd13adf70}
+      \strng{fullhash}{ca5cf79f10c9d0d782ba4b12fea8c086}
+      \strng{bibnamehash}{b4ba204dbe548373613f21acd13adf70}
+      \strng{authorbibnamehash}{b4ba204dbe548373613f21acd13adf70}
+      \strng{authornamehash}{b4ba204dbe548373613f21acd13adf70}
+      \strng{authorfullhash}{ca5cf79f10c9d0d782ba4b12fea8c086}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 Chinese Automation Congress (CAC)}
+      \field{journaltitle}{2017 Chinese Automation Congress (CAC)}
+      \field{title}{A novel human-robot interaction system based on 3D mapping and virtual reality}
+      \field{year}{2017}
+      \field{pages}{5888\bibrangedash 5894}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/CAC.2017.8243836
+      \endverb
+    \endentry
+    \entry{Whitney:2018wk}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=f9acc463c0cf522bcb3d8fef1242c47a}{%
+           family={Whitney},
+           familyi={W\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=523aefca09f8453dc031ccf72b032352}{%
+           family={Rosen},
+           familyi={R\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=0fdc9d2e9635b806628638f1455751f8}{%
+           family={Ullman},
+           familyi={U\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5d23f57d2dcaea35761620dd6d60264f}{%
+           family={Phillips},
+           familyi={P\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c089bf78586586fbb6c843618098245f}{%
+           family={Tellex},
+           familyi={T\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{f0ec3ff18257407ae62f7b8d22d8a3f6}
+      \strng{fullhash}{b6fa5d84bcb8b2825308c7e3ae4951ec}
+      \strng{bibnamehash}{f0ec3ff18257407ae62f7b8d22d8a3f6}
+      \strng{authorbibnamehash}{f0ec3ff18257407ae62f7b8d22d8a3f6}
+      \strng{authornamehash}{f0ec3ff18257407ae62f7b8d22d8a3f6}
+      \strng{authorfullhash}{b6fa5d84bcb8b2825308c7e3ae4951ec}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}
+      \field{isbn}{2153-0866}
+      \field{journaltitle}{2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}
+      \field{title}{ROS Reality: A Virtual Reality Framework Using Consumer-Grade Hardware for ROS-Enabled Robots}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 9}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/IROS.2018.8593513
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

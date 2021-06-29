@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2021.4.7)  22 JUN 2021 19:27
+This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2021.4.7)  29 JUN 2021 21:24
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/elaine/Desktop/Hector_Unity_v2.0/Thesis_LaTeX/Thesis_Jingyi
@@ -1739,8 +1739,6 @@ LaTeX Font Info:    Font shape `TU/Roboto(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/Roboto(0)/b/n' will be
 (Font)              scaled to size 14.4pt on input line 88.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 88.
-LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 88.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 88.
@@ -1759,43 +1757,59 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 88.
 \tf@toc=\write7
 
 \openout7 = Thesis_Jingyi.toc
- (./sections/abstract.tex [3
+ (./chapters/abstract.tex [3
 
 
 ]
 chapter 1.
-) (./sections/introduction.tex [4
+) (./chapters/introduction.tex [4
 
 ]
 chapter 2.
-) (./sections/related_work.tex [5
+[5
 
-]
+]) (./chapters/related_work.tex [6]
 chapter 3.
-) (./sections/implementation.tex [6
+) (./chapters/implementation.tex [7
 
 ]
 chapter 4.
-LaTeX Font Info:    Font shape `TU/Roboto(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 10.
-) (./sections/evaluate.tex [7
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 15.
+[8
 
 ]
+<graphics/uml.png, id=125, 993.7125pt x 1100.11pt>
+File: graphics/uml.png Graphic file (type png)
+<use graphics/uml.png>
+Package luatex.def Info: graphics/uml.png  used on input line 32.
+(luatex.def)             Requested size: 359.81352pt x 398.33858pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    Font shape `TU/Roboto(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 37.
+) (./chapters/evaluate.tex [9] [10<./graphics/uml.png>]
 chapter 5.
-) (./sections/conclusion.tex [8
+) (./chapters/result.tex [11
 
 ]
 chapter 6.
-) [9
+) (./chapters/conclusion.tex [12
+
+]
+chapter 7.
+) [13
 
 ]
 LaTeX Font Info:    Font shape `TU/RobotoMono(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 99.
+(Font)              scaled to size 10.95pt on input line 100.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `RobotoMono' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [10
+ [14
 
 ]
 
@@ -1818,7 +1832,7 @@ Package tudapub Warning: You did not provide a Label for key discussion.
 (tudapub)                Either you need to recompile your document or add a
 (tudapub)                label using \IMRADlabel.
 
-[11] (./Thesis_Jingyi.aux)
+[15] (./Thesis_Jingyi.aux)
 Package rerunfilecheck Info: File `Thesis_Jingyi.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'Thesis_Jingyi.run.xml'.
@@ -1827,18 +1841,18 @@ Package logreq Info: Writing requests to 'Thesis_Jingyi.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 33551 strings out of 478531
+ 33604 strings out of 478531
  100000,1977958 words of node,token memory allocated
- 5538 words of node memory still in use:
-   77 hlist, 8 vlist, 13 rule, 25 disc, 19 local_par, 6 math, 137 glue, 27 kern, 31 penalty, 4 margin_kern, 270 glyph, 177 attribute, 70 glue_spec, 98 attribute_list, 1 write, 7 pdf_action, 28 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
-   avail lists: 1:2,2:1602,3:485,4:125,5:1035,6:105,7:7710,8:72,9:494,10:8,11:465
- 52273 multiletter control sequences out of 65536+600000
+ 5589 words of node memory still in use:
+   77 hlist, 8 vlist, 13 rule, 25 disc, 19 local_par, 6 math, 140 glue, 27 kern, 31 penalty, 4 margin_kern, 270 glyph, 185 attribute, 70 glue_spec, 102 attribute_list, 1 write, 8 pdf_action, 28 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
+   avail lists: 1:2,2:1603,3:485,4:125,5:1128,6:111,7:8487,8:72,9:504,10:11,11:707
+ 52295 multiletter control sequences out of 65536+600000
  124 fonts using 19067127 bytes
  125i,19n,148p,10708b,2666s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/opentype/google/roboto/RobotoMono-Regular.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/xcharter/XCharter-Italic.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/xcharter/XCharter-Roman.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/google/roboto/Roboto-Bold.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/google/roboto/Roboto-Regular.otf>
-Output written on Thesis_Jingyi.pdf (11 pages, 600870 bytes).
+Output written on Thesis_Jingyi.pdf (15 pages, 701884 bytes).
 
-PDF statistics: 225 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 131072)
- 128 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 277 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 131072)
+ 136 words of extra memory for PDF output out of 10000 (max. 100000000)
 

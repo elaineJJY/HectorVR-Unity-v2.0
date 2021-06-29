@@ -2,7 +2,7 @@
 
 \documentclass[
 	ngerman,
-	ruledheaders=section,%Ebene bis zu der die Überschriften mit Linien abgetrennt werden, vgl. DEMO-TUDaPub
+	ruledheaders=chapter,%Ebene bis zu der die Überschriften mit Linien abgetrennt werden, vgl. DEMO-TUDaPub
 	class=report,% Basisdokumentenklasse. Wählt die Korrespondierende KOMA-Script Klasse
 	thesis={type=bachelor},% Dokumententyp Thesis, für Dissertationen siehe die Demo-Datei DEMO-TUDaPhd
 	accentcolor=9c,% Auswahl der Akzentfarbe
@@ -76,8 +76,8 @@
 
 
 \department{inf} % Das Kürzel wird automatisch ersetzt und als Studienfach gewählt, siehe Liste der Kürzel im Dokument.
-\institute{Telekooperation}
-\group{Prof. Dr. Max Mühlhäuser}
+\institute{Telekooperation \\ Prof. Dr. Max Mühlhäuser}
+
 
 \submissiondate{\today}
 \examdate{\today}
@@ -87,12 +87,13 @@
 \affidavit
 \tableofcontents
 
-\input{sections/abstract.tex}
-\input{sections/introduction.tex}
-\input{sections/related_work.tex}
-\input{sections/implementation.tex}
-\input{sections/evaluate.tex}
-\input{sections/conclusion.tex}
+\input{chapters/abstract.tex}
+\input{chapters/introduction.tex}
+\input{chapters/related_work.tex}
+\input{chapters/implementation.tex}
+\input{chapters/evaluate.tex}
+\input{chapters/result.tex}
+\input{chapters/conclusion.tex}
 
 
 

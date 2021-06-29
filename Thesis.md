@@ -1,65 +1,3 @@
-# 更新点
-
-1. ~~菜单可移动： wie oculus 里的菜单~~
-2. 地图vs 雷达  Layer：利用collidor 更改layer  仅30m可看
-3. 地图重新改一下  变小：每个场景相似但不同
-4. camera 看不见 用户的（）也是layer
-5. set target/follow 人：用假功能：自动寻路  NavMesh
-6. 距离（）
-
-
-
-Zeit：5 min akku
-
-10 Taerget
-
-4 Block
-
-记录的点：
-
-Distance：移动距离
-
-Anzahl ：vorbei  aber nicht rescue
-
-Collidor times
-
-## Thesis
-
-1. Länge: 20-45 Seite? (inhalt ist wichtiger  20 ist auch okay)
-2. Latex Template(teilweise auf deutsch und Format)
-3. Anmeldung & genaue Title
-4. Zeitplan
-5. Feedback/Korrektur/Hilfe für Thesis
-6. Präsentation(heimatland)  ok
-
-
-
-###### Content
-
-1. ROS
-	- weg machen? Oder nur über Position Synchronismus
-2. emergenCITY? (1 satz)
-3. Geliederung überprüfen
-
-
-
-## Project
-
-1. ROS (nur in Simulation Sccene, nicht in Test Scenes)
-2. Camera creator nicht active(einfach weg machen oder)
-3. Commentar/ Code Quality von Project(写一下)
-4. Vorbereitung und Ablauf über Nutzerstudie
-	+ Vorstellung Video? （list  ）
-	+ Fragebogen
-	+ wie viele Leute (woher kommen diese Leute)  4*n===>8-16
-	+ machen wir zusammen oder （allein）
-
-
-
-------
-
-
-
 # Abstract
 
 
@@ -101,7 +39,11 @@ Considering the training time and space constraints for rescuers \cite{Murphy:20
 >- challenges:  improve the level of human-computer integration.
 > - There remains a need to ...
 
-Among them, VR has gained a lot of attention due to its immersion and the interaction method that can be changed virtually. VR is reliable as a novel alternative to human-robot interaction. The interaction tasks that users can accomplish with VR devices do not differ significantly from those using real operating systems\cite{Villani:2018ub}. VR displays can provide users with stereo viewing cues, which makes collaborative human-robot interaction tasks in certain situations more efficient and performance better \cite{Liu:2017tw}.
+Among them, VR has gained a lot of attention due to its immersion and the interaction method that can be changed virtually. VR is no longer a new word. With the development of technology in recent years, VR devices are gradually becoming more accessible to users. With the improvement of hardware devices, the new generation of VR headsets have higher resolution and wider field of view. And in terms of handle positioning, with the development of computer vision in the past few years, VR devices can now use only the four cameras mounted on the VR headset to achieve accurate spatial positioning, and support hand tracking, accurately capturing every movement of hand joints. While VR are often considered entertainment devices, VR brings more than that. It plays an important role in many fields such as entertainment, training, education and medical care.
+
+The use of VR in human-computer collaboration also has the potential. In terms of reliability, VR is reliable as a novel alternative to human-robot interaction. The interaction tasks that users can accomplish with VR devices do not differ significantly from those using real operating systems\cite{Villani:2018ub}. In terms of user experience and operational efficiency, VR displays can provide users with stereo viewing cues, which makes collaborative human-robot interaction tasks in certain situations more efficient and performance better \cite{Liu:2017tw}.
+
+However, there remains a need to explore human-computer interaction patterns and improve the level of human-computer integration\cite{Wang:2017uy}. Intuitive and easy-to-use interaction methods can enable the user to explore the environment as intentionally as possible and improve the efficiency of search and rescue.
 
 
 
@@ -122,9 +64,18 @@ Among them, VR has gained a lot of attention due to its immersion and the intera
 >
 > - General content of the survey
 
+For this purpose, this paper presents a preliminary VR-based system for the simulation of ground rescue robots with four different modes of operation and corresponding test scenarios imitating a post-disaster city. The test scenario simulates a robot collaborating with Unity to construct a virtual 3D scene. The robot has a simulated radar, which makes the display of the scene dependent on the robot's movement. In order to find a control method that is as intuitive and low mental fatigue as possible, a user survey was executed after the development was completed.
+
 
 
 > ##### Paper Architecture
+
+Section \ref{*i*mplementation} provides details of the purposed system, including the techniques used for the different interaction modes and the structure of the test scenarios.
+Section \ref{evaluate} will talk about the design and process of user study.
+
+Section \ref{result} presents the results of the user study and analyzes the advantages and disadvantages of the different modes of operation and the directions for improvement.
+
+Finally, in Section \ref{conclusion}, conclusions and future work are summarized.
 
 
 
@@ -134,10 +85,18 @@ Among them, VR has gained a lot of attention due to its immersion and the intera
 
 # Implementation
 
+% summary
+
+In this chapter, the tools and techniques used in building this human-computer collaborative VR-based system are described. The focus will be on interaction techniques for different modes of operation. In addition, the construction of test scenarios and the setup of the robot will also be covered in this chapter.
+
+
+
 ## 1. Overview
 
 > - the purpose of the unity project
 > - Components of the project: 4 operation modes & test Scene
+
+The main goal of this work is to design and implement a VR-based human-robot collaboration system with different methods of operating the robot in order to find out which method of operation is more suitable to be used to control the rescue robot. Further, it is to provide some basic insights for future development directions and to provide a general direction for finding an intuitive, easy-to-use and efficient operation method. Therefore, the proposed system was developed using Unity, including four modes of operation and a corresponding test environment for simulating post-disaster scenarios. In each operation mode, the user has a different method to control the robot. In addition, in order to better simulate the process by which the robot scans its surroundings and the computer side cumulatively gets a reconstructed 3D virtual scene, the test environment was implemented in such a way that the picture seen by the user depends on the direction of the robot's movement and the trajectory it travels through.
 
 
 
@@ -155,13 +114,35 @@ Among them, VR has gained a lot of attention due to its immersion and the intera
 >
 > 	
 
+The proposed system runs on a computer with the Windows 10 operating system. This computer has been equipped with an Intel Core i7-8700K CPU, 32 GB RAM as well as a NVIDIA GTX 1080 GPU with 8 GB VRAM. HTC Vive is used as a VR device. It has a resolution of 1080 × 1200 per eye, resulting in a total resolution of 2160 × 1200 pixels, a refresh rate of 90 Hz, and a field of view of 110 degrees. It includes two motion controllers and uses two Lighthouses to track the position of the headset as well as the motion controllers.
 
+Unity was chosen as the platform to develop the system. Unity is a widely used game engine with a Steam VR plugin \footnote{https://assetstore.unity.com/packages/tools/integration/steamvr-plugin-32647}, which allows developers to focus on the VR environment and interactive behaviors in programming, rather than specific controller buttons and headset positioning, making VR development much simpler. Another reason why Unity was chosen as a development platform was the potential for collaboration with the Robot Operating System (ROS), a frequently used operating system for robot simulation and manipulation, which is flexible, low-coupling, distributed, open source, and has a powerful and rich third-party feature set. In terms of collaboration between Unity and ROS, Siemens provides open source software libraries and tools in C\# for communicating with ROS from .NET applications \footnote{https://github.com/siemens/ros-sharp}. Combining ROS and Unity to develop a collaborative human-robot interaction platform proved to be feasible\cite{Whitney:2018wk}. Since the focus of this paper is on human-robot interaction, collaboration and synchronization of ROS will not be explored in detail here.
 
 ## 3. Interaction techniques
 
+This system has 4 different approaches to control the robot. Each mode has its own distinctive features: 
+
+```latex
+\begin{enumerate}
+\item In Handle Mode the user will send control commands directly using the motion controller. 
+\item In Lab Mode a simulated lab is constructed in the VR environment and the user will use virtual buttons in the lab to control the rescue robot. 
+\item In Remote Mode the user can set the driving destination directly. 
+\item In UI Mode the user has a virtual menu and sends commands via rays from the motion controller.
+\end{enumerate}
+```
+
+In order to improve the reusability of the code and to facilitate the management of subsequent development, the classes that manage the interaction actions of each mode implement the same interface. A graphical representation of the system activities workﬂow is given in the UML activity diagram in Fig.\ref{fig:uml}.
+
+```latex
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=14cm]{graphics/uml.png}
+    \caption{UML Class diagram for the structure of the system}
+    \label{fig:uml}
+\end{figure}
+```
 
 
-The Unity project offers 4 main modes of robot operation...
 
 ##### 1. Handle Mode
 
@@ -222,6 +203,12 @@ The Unity project offers 4 main modes of robot operation...
 > - what will be recorded: time, collisions ...(?)
 
 
+
+
+
+
+
+# Results
 
 > ##### results and discussion
 >

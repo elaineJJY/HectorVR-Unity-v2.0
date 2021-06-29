@@ -2357,6 +2357,10 @@
     <bcf:citekey order="11">Pourmehr:2013ta</bcf:citekey>
     <bcf:citekey order="12">Ma:2015wu</bcf:citekey>
     <bcf:citekey order="13">SOARES20151656</bcf:citekey>
+    <bcf:citekey order="14">Villani:2018ub</bcf:citekey>
+    <bcf:citekey order="15">Liu:2017tw</bcf:citekey>
+    <bcf:citekey order="16">Wang:2017uy</bcf:citekey>
+    <bcf:citekey order="17">Whitney:2018wk</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
