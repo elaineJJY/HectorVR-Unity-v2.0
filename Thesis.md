@@ -4,8 +4,6 @@
 
 # Introduction
 
-1.5 Seite
-
 > ##### Rescue Robot
 >
 > - What is rescue robots & some use cases of rescue robots
@@ -64,13 +62,13 @@ However, there remains a need to explore human-computer interaction patterns and
 >
 > - General content of the survey
 
-For this purpose, this paper presents a preliminary VR-based system for the simulation of ground rescue robots with four different modes of operation and corresponding test scenarios imitating a post-disaster city. The test scenario simulates a robot collaborating with Unity to construct a virtual 3D scene. The robot has a simulated radar, which makes the display of the scene dependent on the robot's movement. In order to find a control method that is as intuitive and low mental fatigue as possible, a user survey was executed after the development was completed.
+For this purpose, this paper presents a preliminary VR-based system for the simulation of ground rescue robots with four different modes of operation and corresponding test scenes imitating a post-disaster city. The test scene simulates a robot collaborating with Unity to construct a virtual 3D scene. The robot has a simulated radar, which makes the display of the scene dependent on the robot's movement. In order to find a control method that is as intuitive and low mental fatigue as possible, a user survey was executed after the development was completed.
 
 
 
 > ##### Paper Architecture
 
-Section \ref{*i*mplementation} provides details of the purposed system, including the techniques used for the different interaction modes and the structure of the test scenarios.
+Section \ref{*i*mplementation} provides details of the purposed system, including the techniques used for the different interaction modes and the structure of the test scenes.
 Section \ref{evaluate} will talk about the design and process of user study.
 
 Section \ref{result} presents the results of the user study and analyzes the advantages and disadvantages of the different modes of operation and the directions for improvement.
@@ -87,7 +85,7 @@ Finally, in Section \ref{conclusion}, conclusions and future work are summarized
 
 % summary
 
-In this chapter, the tools and techniques used in building this human-computer collaborative VR-based system are described. The focus will be on interaction techniques for different modes of operation. In addition, the construction of test scenarios and the setup of the robot will also be covered in this chapter.
+In this chapter, the tools and techniques used in building this human-computer collaborative VR-based system are described. The focus will be on interaction techniques for different modes of operation. In addition, the setup of the robot and the construction of test scenes will also be covered in this chapter.
 
 
 
@@ -104,21 +102,35 @@ The main goal of this work is to design and implement a VR-based human-robot col
 
 > - Compurter Information: CPU,GPU
 >
-> - HTC Vive（半页）
+> - HTC Vive
 >
 > - ROS and Robot
 >
 > - Unity VR engine & SteamVR
 >
-> - [UML/ Relationship photo]
->
-> 	
+> 
 
 The proposed system runs on a computer with the Windows 10 operating system. This computer has been equipped with an Intel Core i7-8700K CPU, 32 GB RAM as well as a NVIDIA GTX 1080 GPU with 8 GB VRAM. HTC Vive is used as a VR device. It has a resolution of 1080 × 1200 per eye, resulting in a total resolution of 2160 × 1200 pixels, a refresh rate of 90 Hz, and a field of view of 110 degrees. It includes two motion controllers and uses two Lighthouses to track the position of the headset as well as the motion controllers.
 
 Unity was chosen as the platform to develop the system. Unity is a widely used game engine with a Steam VR plugin \footnote{https://assetstore.unity.com/packages/tools/integration/steamvr-plugin-32647}, which allows developers to focus on the VR environment and interactive behaviors in programming, rather than specific controller buttons and headset positioning, making VR development much simpler. Another reason why Unity was chosen as a development platform was the potential for collaboration with the Robot Operating System (ROS), a frequently used operating system for robot simulation and manipulation, which is flexible, low-coupling, distributed, open source, and has a powerful and rich third-party feature set. In terms of collaboration between Unity and ROS, Siemens provides open source software libraries and tools in C\# for communicating with ROS from .NET applications \footnote{https://github.com/siemens/ros-sharp}. Combining ROS and Unity to develop a collaborative human-robot interaction platform proved to be feasible\cite{Whitney:2018wk}. Since the focus of this paper is on human-robot interaction, collaboration and synchronization of ROS will not be explored in detail here.
 
-## 3. Interaction techniques
+
+
+## 3. Robot
+
+> camera
+>
+> radar
+>
+> layer change => collider
+>
+> information
+
+To simulate the process of a robot using a probe camera to detect the real environment and synchronise it to Unity, a conical collision body was set up on the robot. The robot will transform the Layers of the objects in the scene into visible Layers by collision detection as it is driving. In addition, the robot's driving performance, such as the number of collisions, average speed, total distance, etc., will be recorded in each test. The detailed recorded information can be seen in Fig.\ref{fig:uml}. The movement of the robot depends on the value of the signal that is updated in each mode. In addition, the robot's Gameobject has the NavMeshAgent \footnote{https://docs.unity3d.com/ScriptReference/AI.NavMeshAgent.html} component, which supports the robot's navigation to the specified destination with automatic obstacle avoidance in the test scene.
+
+
+
+## 4. Interaction techniques
 
 This system has 4 different approaches to control the robot. Each mode has its own distinctive features: 
 
@@ -131,13 +143,13 @@ This system has 4 different approaches to control the robot. Each mode has its o
 \end{enumerate}
 ```
 
-In order to improve the reusability of the code and to facilitate the management of subsequent development, the classes that manage the interaction actions of each mode implement the same interface. A graphical representation of the system activities workﬂow is given in the UML activity diagram in Fig.\ref{fig:uml}.
+In order to improve the reusability of the code and to facilitate the management of subsequent development, the classes that manage the interaction actions of each mode implement the same interface. A graphical representation of the system structure is given in the UML activity diagram in Fig.\ref{fig:uml}.
 
 ```latex
 \begin{figure}[h]
     \centering
-    \includegraphics[height=14cm]{graphics/uml.png}
-    \caption{UML Class diagram for the structure of the system}
+    \includegraphics[height=12cm]{graphics/uml.png}
+    \caption{UML Class diagram for the main structure of the system}
     \label{fig:uml}
 \end{figure}
 ```
@@ -178,12 +190,17 @@ In order to improve the reusability of the code and to facilitate the management
 
 
 
-## 4. Test Scene
+## 5. Test Scene
 
 > - goal of the project: rescue robots  => destroyed city,
->- environment:  destroyed city & Collider for test  [photo] 
+> - environment:  destroyed city & Collider for test  [photo] 
+> - radar layer
 
+In order to simulate the use of rescue robots in disaster scenarios, the test scenes were built to mimic the post-disaster urban environment as much as possible. The POLYGON Apocalypse\footnote{https://assetstore.unity.com/packages/3d/environments/urban/polygon-apocalypse-low-poly-3d-art-by-synty-154193}, available on the Unity Asset Store, is a low poly asset pack with a large number of models of buildings, streets, vehicles, etc. Using this resource pack as a base, additional collision bodies of the appropriate size were manually added to each building and obstacle after the pack was imported, which was needed to help track the robot's driving crash in subsequent tests.
 
+Considering that there are four modes of operation to be tested, four scenes with similar complexity, similar composition of buildings but different road conditions and placement of buildings were constructed. The similarity in complexity of the scenes ensures that the difficulty of the four tests is basically identical. The different scene setups ensure that the scene information learned by the user after one test will not make him understand the next test scene and thus affect the accuracy of the test data. 
+
+The entire scene is initially invisible, and the visibility of each objects in the test scene is gradually updated as the robot drives along. Ten interactable sufferer characters were placed in each test scene. The place of placement can be next to the car, the house side and some other reasonable places.
 
 
 
@@ -193,18 +210,54 @@ In order to improve the reusability of the code and to facilitate the management
 >
 > - Evaluate user experience and robot performance in different operating modes
 
-
-
-> ##### test process
->
-> - test group
->
-> - task: The user is required to .....
-> - what will be recorded: time, collisions ...(?)
+This chapter describes the design and detailed process of the user evaluation. The purpose of this user study is to measure the impact of four different modes of operation on rescue efficiency, robot driving performance, and psychological and physiological stress and fatigue, etc. For this purpose, participants are asked to find victims in a test scene using different modes of operation and to answer a questionnaire after the test corresponding to each mode of operation.
 
 
 
+## Study Design
 
+The evaluation for each mode of operation consists of two main parts. The first part is the data recorded during the process of the participant driving the robot in the VR environment to find the victims. The recorded data includes information about the robot's collision and the speed of driving etc. The rescue of the victims was also considered as part of the evaluation. Besides the number of victims rescued, the number of victims who were already visible but neglected is also important data. The Official NASA Task Load Index (TLX) was used to measure the participants subjective workload asessments. Additionally, participants were asked specific questions for each mode of operation and were asked to select their favorite and least favorite modes of operation.
+
+
+
+## Procedure
+
+##### Demographics and Introduction 
+
+> 1. inform the purpose and collected data
+> 2. basic demographics(google form)
+> 3. introduce 4 mode: verbal + show motion controller
+
+Before the beginning of the actual testing process, participants were informed of the purpose of the project, the broad process and the content of the data that would be collected. After filling in the basic demographics, the features of each of the four modes of operation and their rough usage were introduced verbally with a display of the buttons on the motion controllers.
+
+
+
+##### Entering the world of VR
+
+> 1. wear the headset
+> 2. familiar with the menu : switch & select mode(practice)
+> 3. change position : teleport & raise or lower
+> 4. rescue 1 victim
+
+After the basic introduction part, participants would directly put on the VR headset and enter the VR environment to complete the rest of the tutorial. Considering that participants might not have experience with VR and that it would take time to learn how to operate the four different modes, the proposed system additionally sets up a practice pattern and places some models of victims in the practice scene. After entering the VR world, participants first needed to familiarize themselves with the opening and selecting options of the menu, as this involves switching between different modes and entering the test scenes. Then participants would use the motion controllers to try to teleport themselves, or raise themselves into mid-air. Finally participants were asked to interact with the victim model through virtual hands. After this series of general tutorials, participants were already generally familiar with the use of VR and how to move around in the VR world.
+
+
+
+##### Practice and evaluation of patterns
+
+> 1. `foreach Mode`:
+>	1. enter mode(practice)
+> 	2. try to move the robot
+> 	3. try to rescue 1-2 victims
+> 	4. enter test scene
+> 	5. -testing- 
+> 	6. Fill out the questionnaire: google form + TLX
+> 
+> 2. in the end: summary part of google form: like/dislike most. + reason + feedback
+
+Given the different manipulation approaches for each mode, in order to avoid confusion between the different modes, participants would then take turns practicing and directly evaluating each mode immediately afterwards. The participant first switched to the mode of operation to be tested and manipulated the robot to move in that mode. After attempting to rescue 1-2 victim models and the participant indicated that he or she was familiar enough with this operation mode, the participant would enter the test scene. In the test scene, participants had to save as many victims as possible in a given time limit. Participants were required to move the robot around the test scene to explore the post-disaster city and to find and rescue victims. In this process, if the robot crashes with buildings, obstacles, etc., besides the collision information being recorded as test data, participants would also receive sound and vibration feedback. The test will automatically end when time runs out or when all the victims in the scene have been rescued. Participants were required to complete the evaluation questionnaire and the NASA evaluation form at the end of each test. This process was repeated in each mode of operation. 
+
+After all the tests were completed, participants were asked to compare the four operation modes and select the one they liked the most and the one they liked the least. In addition, participants could give their reasons for the choice and express their opinions as much as they wanted, such as suggestions for improvement or problems found during operation.
 
 
 

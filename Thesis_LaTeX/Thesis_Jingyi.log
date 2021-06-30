@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2021.4.7)  29 JUN 2021 21:24
+This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2021.4.7)  30 JUN 2021 18:18
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/elaine/Desktop/Hector_Unity_v2.0/Thesis_LaTeX/Thesis_Jingyi
@@ -71,9 +71,9 @@ Package: tocbasic 2021/03/17 v3.33 KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: babel extension for `toc' omitted
 (tocbasic)             because of missing \bbl@set@language on input line 137.
-Class scrreprt Info: File `scrsize11pt.clo' used to setup font sizes on input line 2451.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
-File: scrsize11pt.clo 2021/03/17 v3.33 KOMA-Script font size class option (11pt)
+Class scrreprt Info: File `scrsize12pt.clo' used to setup font sizes on input line 2451.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrsize12pt.clo
+File: scrsize12pt.clo 2021/03/17 v3.33 KOMA-Script font size class option (12pt)
 luaotfload | db : Font names database loaded from /Users/elaine/Library/texlive/2021/texmf-var/luatex-cache/generic/names/luaotfload-names.luc) (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/typearea.sty
 Package: typearea 2021/03/17 v3.33 KOMA-Script package (type area)
 \ta@bcor=\skip48
@@ -83,21 +83,21 @@ Package: typearea 2021/03/17 v3.33 KOMA-Script package (type area)
 \ta@temp=\skip51
 \footheight=\skip52
 Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 10
+(typearea)             DIV  = 12
 (typearea)             BCOR = 0.0pt
 (typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 418.25555pt
+(typearea)              \textwidth      = 448.13095pt
 (typearea)              DIV departure   = -6%
-(typearea)              \evensidemargin = 17.3562pt
-(typearea)              \oddsidemargin  = 17.3562pt
+(typearea)              \evensidemargin = 2.4185pt
+(typearea)              \oddsidemargin  = 2.4185pt
 (typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 595.80026pt
-(typearea)              \topmargin      = -25.16531pt
-(typearea)              \headheight     = 17.0pt
-(typearea)              \headsep        = 20.40001pt
-(typearea)              \topskip        = 11.0pt
-(typearea)              \footskip       = 47.6pt
-(typearea)              \baselineskip   = 13.6pt
+(typearea)              \textheight     = 635.5pt
+(typearea)              \topmargin      = -41.72441pt
+(typearea)              \headheight     = 18.125pt
+(typearea)              \headsep        = 21.75pt
+(typearea)              \topskip        = 12.0pt
+(typearea)              \footskip       = 50.75pt
+(typearea)              \baselineskip   = 14.5pt
 (typearea)              on input line 1741.
 )
 \c@part=\count179
@@ -1430,33 +1430,33 @@ Package csquotes Info: ... found 'babel' package.
  (./Thesis_Jingyi.aux)
 \openout1 = Thesis_Jingyi.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 64.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 65.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-Package scrbase Info: activating english \contentsname on input line 64.
-Package scrbase Info: activating english \listfigurename on input line 64.
-Package scrbase Info: activating english \listtablename on input line 64.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+Package scrbase Info: activating english \contentsname on input line 65.
+Package scrbase Info: activating english \listfigurename on input line 65.
+Package scrbase Info: activating english \listtablename on input line 65.
  (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count421
@@ -1482,57 +1482,57 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 64.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 64.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 64.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 64.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 64.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 64.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 64.
-LaTeX Font Info:    Redeclaring math accent \check on input line 64.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 64.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 64.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 64.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 64.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 65.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 65.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 65.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 65.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 65.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 65.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 65.
+LaTeX Font Info:    Redeclaring math accent \check on input line 65.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 65.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 65.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 65.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 65.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 64.
+(Font)              `operators' in the math version `normal' on input line 65.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/XCharter(0)/m/n on input line 64.
+(Font)                  OT1/cmr/m/n --> TU/XCharter(0)/m/n on input line 65.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 64.
+(Font)              `operators' in the math version `bold' on input line 65.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/XCharter(0)/m/n on input line 64.
+(Font)                  OT1/cmr/bx/n --> TU/XCharter(0)/m/n on input line 65.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/XCharter(0)/m/n --> TU/XCharter(0)/m/n on input line 64.
+(Font)                  TU/XCharter(0)/m/n --> TU/XCharter(0)/m/n on input line 65.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/XCharter(0)/m/it on input line 64.
+(Font)                  OT1/cmr/m/it --> TU/XCharter(0)/m/it on input line 65.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/XCharter(0)/b/n on input line 64.
+(Font)                  OT1/cmr/bx/n --> TU/XCharter(0)/b/n on input line 65.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/Roboto(0)/m/n on input line 64.
+(Font)                  OT1/cmss/m/n --> TU/Roboto(0)/m/n on input line 65.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/RobotoMono(0)/m/n on input line 64.
+(Font)                  OT1/cmtt/m/n --> TU/RobotoMono(0)/m/n on input line 65.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/XCharter(0)/m/n --> TU/XCharter(0)/b/n on input line 64.
+(Font)                  TU/XCharter(0)/m/n --> TU/XCharter(0)/b/n on input line 65.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/XCharter(0)/b/it on input line 64.
+(Font)                  OT1/cmr/bx/it --> TU/XCharter(0)/b/it on input line 65.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/Roboto(0)/b/n on input line 64.
+(Font)                  OT1/cmss/bx/n --> TU/Roboto(0)/b/n on input line 65.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/RobotoMono(0)/b/n on input line 64.
+(Font)                  OT1/cmtt/m/n --> TU/RobotoMono(0)/b/n on input line 65.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1547,18 +1547,18 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=502.14963pt
-* \textheight=643.89775pt
+* \textheight=638.27277pt
 * \oddsidemargin=-29.59087pt
 * \evensidemargin=-29.59087pt
 * \topmargin=-29.59087pt
-* \headheight=33.56445pt
-* \headsep=20.40001pt
-* \topskip=11.0pt
-* \footskip=47.6pt
+* \headheight=34.68945pt
+* \headsep=21.75pt
+* \topskip=12.0pt
+* \footskip=50.75pt
 * \marginparwidth=0.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1569,25 +1569,25 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \ptxcd_headrule_box=\box59
-Package scrbase Info: activating english \ptxcd_byname on input line 64.
-Package scrbase Info: activating english \ptxcd_fromname on input line 64.
-Package scrbase Info: activating english \ptxcd_departmentprefix on input line 64.
-Package scrbase Info: activating english \ptxcd_reviewname on input line 64.
-Package scrbase Info: activating english \ptxcd_examdatename on input line 64.
-Package scrbase Info: activating english \ptxcd_submissiondatename on input line 64.
-Package scrbase Info: activating english \ptxcd_studentIDname on input line 64.
-Package scrbase Info: activating english \ptxcd_thesisType on input line 64.
-Package scrbase Info: activating english \g__ptxcd_cc_attr_by: on input line 64.
-Package scrbase Info: activating english \g__ptxcd_cc_attr_nc: on input line 64.
-Package scrbase Info: activating english \g__ptxcd_cc_attr_sa: on input line 64.
-Package scrbase Info: activating english \g__ptxcd_cc_attr_nd: on input line 64.
-Package scrbase Info: activating english \g__ptxcd_cc_intro: on input line 64.
-Package scrbase Info: activating english \g__ptxcd_cc_sep: on input line 64.
-Package scrbase Info: activating english \researchgroupname on input line 64.
-Package scrbase Info: activating english \institutename on input line 64.
-Package scrbase Info: activating english \authorandname on input line 64.
-Package scrbase Info: activating english \ptxcd_datename on input line 64.
-Package hyperref Info: Link coloring OFF on input line 64.
+Package scrbase Info: activating english \ptxcd_byname on input line 65.
+Package scrbase Info: activating english \ptxcd_fromname on input line 65.
+Package scrbase Info: activating english \ptxcd_departmentprefix on input line 65.
+Package scrbase Info: activating english \ptxcd_reviewname on input line 65.
+Package scrbase Info: activating english \ptxcd_examdatename on input line 65.
+Package scrbase Info: activating english \ptxcd_submissiondatename on input line 65.
+Package scrbase Info: activating english \ptxcd_studentIDname on input line 65.
+Package scrbase Info: activating english \ptxcd_thesisType on input line 65.
+Package scrbase Info: activating english \g__ptxcd_cc_attr_by: on input line 65.
+Package scrbase Info: activating english \g__ptxcd_cc_attr_nc: on input line 65.
+Package scrbase Info: activating english \g__ptxcd_cc_attr_sa: on input line 65.
+Package scrbase Info: activating english \g__ptxcd_cc_attr_nd: on input line 65.
+Package scrbase Info: activating english \g__ptxcd_cc_intro: on input line 65.
+Package scrbase Info: activating english \g__ptxcd_cc_sep: on input line 65.
+Package scrbase Info: activating english \researchgroupname on input line 65.
+Package scrbase Info: activating english \institutename on input line 65.
+Package scrbase Info: activating english \authorandname on input line 65.
+Package scrbase Info: activating english \ptxcd_datename on input line 65.
+Package hyperref Info: Link coloring OFF on input line 65.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1597,9 +1597,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count427
 )
-LaTeX Info: Redefining \ref on input line 64.
-LaTeX Info: Redefining \pageref on input line 64.
-LaTeX Info: Redefining \nameref on input line 64.
+LaTeX Info: Redefining \ref on input line 65.
+LaTeX Info: Redefining \pageref on input line 65.
+LaTeX Info: Redefining \nameref on input line 65.
  (./Thesis_Jingyi.out) (./Thesis_Jingyi.out)
 \@outlinefile=\write5
 
@@ -1611,21 +1611,21 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 64.
+(scrreprt)           before \begin{document} on input line 65.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (/usr/local/texlive/2021/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 \BKM@id=\count428
 ))
-LaTeX Info: Redefining \microtypecontext on input line 64.
+LaTeX Info: Redefining \microtypecontext on input line 65.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 64.
+LaTeX Info: Redefining \showhyphens on input line 65.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of spacing.
 Package microtype Info: No adjustment of kerning.
@@ -1675,8 +1675,8 @@ Package biblatex Warning: Biber reported the following issues
 (biblatex)                - Entry 'Sousa:2017tn' (BibTexDatei.bib): Invalid format '2017/10/18' of date field 'date' - ignoring.
 
 )
-Package biblatex Info: Reference section=0 on input line 64.
-Package biblatex Info: Reference segment=0 on input line 64.
+Package biblatex Info: Reference section=0 on input line 65.
+Package biblatex Info: Reference segment=0 on input line 65.
 
 Package tudapub/thesis Info: You submitted birthplace data for title
 (tudapub/thesis)             information.
@@ -1689,43 +1689,41 @@ Package tudapub/thesis Info: You submitted examdate data for title
 (tudapub/thesis)             This field is only used for type=dr/drfinal.
 (tudapub/thesis)             It will be ignored.
 
-Package scrbase Info: activating english \ptxcd_department on input line 87.
-Package scrbase Info: activating english \departmentname on input line 87.
-Package scrbase Info: activating english \ptxcd_departmentprefix on input line 87.
-Package scrbase Info: activating english \departmentfullname on input line 87.
+Package scrbase Info: activating english \ptxcd_department on input line 88.
+Package scrbase Info: activating english \departmentname on input line 88.
+Package scrbase Info: activating english \ptxcd_departmentprefix on input line 88.
+Package scrbase Info: activating english \departmentfullname on input line 88.
 \ptxcd_xmpdata_stream=\write6
 
 \openout6 = Thesis_Jingyi.xmpdata
 LaTeX Font Info:    Font shape `TU/Roboto(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 87.
+(Font)              scaled to size 12.0pt on input line 88.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `Roboto' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/Roboto(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 87.
+(Font)              scaled to size 12.0pt on input line 88.
 LaTeX Font Info:    Font shape `TU/Roboto(0)/b/n' will be
-(Font)              scaled to size 36.0pt on input line 87.
-LaTeX Font Info:    Font shape `TU/Roboto(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 87.
+(Font)              scaled to size 36.0pt on input line 88.
 
 warning  (file tuda_logo.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.5', but at most version '1.4' allowed
 <tuda_logo.pdf, id=6, 156.48964pt x 62.59586pt>
 File: tuda_logo.pdf Graphic file (type pdf)
 <use tuda_logo.pdf>
-Package luatex.def Info: tuda_logo.pdf  used on input line 87.
+Package luatex.def Info: tuda_logo.pdf  used on input line 88.
 (luatex.def)             Requested size: 156.49402pt x 62.59605pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 87.
+(Font)              <12> on input line 88.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 87.
+(Font)              <8> on input line 88.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 87.
+(Font)              <6> on input line 88.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 LaTeX Font Info:    Font shape `TU/Roboto(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 87.
+(Font)              scaled to size 10.0pt on input line 88.
  [1
 
 
@@ -1737,11 +1735,13 @@ LaTeX Font Info:    Font shape `TU/Roboto(0)/m/n' will be
 
 <./tuda_logo.pdf>]
 LaTeX Font Info:    Font shape `TU/Roboto(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 88.
+(Font)              scaled to size 17.28pt on input line 89.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 88.
+(Font)              <17.28> on input line 89.
+LaTeX Font Info:    Font shape `TU/Roboto(0)/m/n' will be
+(Font)              scaled to size 10.95pt on input line 89.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 88.
+(Font)              <10.95> on input line 89.
  [2
 
 
@@ -1751,8 +1751,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 LaTeX Font Info:    Font shape `TU/Roboto(0)/b/n' will be
-(Font)              scaled to size 20.74pt on input line 88.
-Package tocbasic Info: character protrusion at toc deactivated on input line 88.
+(Font)              scaled to size 24.88pt on input line 89.
+Package tocbasic Info: character protrusion at toc deactivated on input line 89.
  (./Thesis_Jingyi.toc)
 \tf@toc=\write7
 
@@ -1768,43 +1768,42 @@ chapter 1.
 chapter 2.
 [5
 
-]) (./chapters/related_work.tex [6]
+]) (./chapters/implementation.tex [6]
 chapter 3.
-) (./chapters/implementation.tex [7
-
-]
-chapter 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 15.
-[8
+(Font)              <7> on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 15.
+[7
 
-]
-<graphics/uml.png, id=125, 993.7125pt x 1100.11pt>
+] [8]
+<graphics/uml.png, id=134, 1237.62375pt x 1149.29375pt>
 File: graphics/uml.png Graphic file (type png)
 <use graphics/uml.png>
-Package luatex.def Info: graphics/uml.png  used on input line 32.
-(luatex.def)             Requested size: 359.81352pt x 398.33858pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+Package luatex.def Info: graphics/uml.png  used on input line 35.
+(luatex.def)             Requested size: 367.66415pt x 341.43306pt.
 LaTeX Font Info:    Font shape `TU/Roboto(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 37.
-) (./chapters/evaluate.tex [9] [10<./graphics/uml.png>]
-chapter 5.
+(Font)              scaled to size 14.4pt on input line 40.
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+  [][][]\TU/XCharter(0)/m/n/10 https://as-set-store.unity.com/pack-ages/3d/en-vi-ron-ments/ur-ban/polygon-apocalypse-low-poly-3d-art-by-synty-
+ []
+
+[9<./graphics/uml.png>]) (./chapters/evaluate.tex [10]
+chapter 4.
 ) (./chapters/result.tex [11
 
 ]
-chapter 6.
+chapter 5.
 ) (./chapters/conclusion.tex [12
 
 ]
-chapter 7.
+chapter 6.
 ) [13
 
 ]
 LaTeX Font Info:    Font shape `TU/RobotoMono(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 100.
+(Font)              scaled to size 12.0pt on input line 101.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `RobotoMono' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -1841,18 +1840,18 @@ Package logreq Info: Writing requests to 'Thesis_Jingyi.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 33604 strings out of 478531
+ 33606 strings out of 478531
  100000,1977958 words of node,token memory allocated
- 5589 words of node memory still in use:
-   77 hlist, 8 vlist, 13 rule, 25 disc, 19 local_par, 6 math, 140 glue, 27 kern, 31 penalty, 4 margin_kern, 270 glyph, 185 attribute, 70 glue_spec, 102 attribute_list, 1 write, 8 pdf_action, 28 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
-   avail lists: 1:2,2:1603,3:485,4:125,5:1128,6:111,7:8487,8:72,9:504,10:11,11:707
- 52295 multiletter control sequences out of 65536+600000
- 124 fonts using 19067127 bytes
- 125i,19n,148p,10708b,2666s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 5603 words of node memory still in use:
+   77 hlist, 8 vlist, 13 rule, 25 disc, 19 local_par, 6 math, 142 glue, 27 kern, 31 penalty, 4 margin_kern, 270 glyph, 187 attribute, 70 glue_spec, 103 attribute_list, 1 write, 7 pdf_action, 28 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
+   avail lists: 1:2,2:1395,3:425,4:108,5:982,6:112,7:7509,8:76,9:530,10:22,11:606
+ 52304 multiletter control sequences out of 65536+600000
+ 128 fonts using 19470527 bytes
+ 125i,19n,148p,10708b,2657s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/opentype/google/roboto/RobotoMono-Regular.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/xcharter/XCharter-Italic.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/xcharter/XCharter-Roman.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/google/roboto/Roboto-Bold.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/google/roboto/Roboto-Regular.otf>
-Output written on Thesis_Jingyi.pdf (15 pages, 701884 bytes).
+Output written on Thesis_Jingyi.pdf (15 pages, 756635 bytes).
 
-PDF statistics: 277 PDF objects out of 1000 (max. 8388607)
- 58 named destinations out of 1000 (max. 131072)
+PDF statistics: 282 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 131072)
  136 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -2,7 +2,7 @@
 
 \documentclass[
 	ngerman,
-	ruledheaders=chapter,%Ebene bis zu der die Überschriften mit Linien abgetrennt werden, vgl. DEMO-TUDaPub
+	ruledheaders=section,%Ebene bis zu der die Überschriften mit Linien abgetrennt werden, vgl. DEMO-TUDaPub
 	class=report,% Basisdokumentenklasse. Wählt die Korrespondierende KOMA-Script Klasse
 	thesis={type=bachelor},% Dokumententyp Thesis, für Dissertationen siehe die Demo-Datei DEMO-TUDaPhd
 	accentcolor=9c,% Auswahl der Akzentfarbe
@@ -10,9 +10,10 @@
 	marginpar=false,% Kopfzeile und Fußzeile erstrecken sich nicht über die Randnotizspalte
 	%BCOR=5mm,%Bindekorrektur, falls notwendig
 	parskip=half-,%Absatzkennzeichnung durch Abstand vgl. KOMA-Script
-	fontsize=11pt,%Basisschriftgröße laut Corporate Design ist mit 9pt häufig zu klein
+	fontsize=12pt,%Basisschriftgröße laut Corporate Design ist mit 9pt häufig zu klein
 %	logofile=example-image, %Falls die Logo Dateien nicht vorliegen
 ]{tudapub}
+
 
 
 % Der folgende Block ist nur bei pdfTeX auf Versionen vor April 2018 notwendig
@@ -89,7 +90,7 @@
 
 \input{chapters/abstract.tex}
 \input{chapters/introduction.tex}
-\input{chapters/related_work.tex}
+%\input{chapters/related_work.tex}
 \input{chapters/implementation.tex}
 \input{chapters/evaluate.tex}
 \input{chapters/result.tex}
