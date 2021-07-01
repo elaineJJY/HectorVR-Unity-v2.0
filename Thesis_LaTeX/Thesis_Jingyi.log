@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2021.4.7)  30 JUN 2021 18:18
+This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2021.4.7)  1 JUL 2021 14:25
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/elaine/Desktop/Hector_Unity_v2.0/Thesis_LaTeX/Thesis_Jingyi
@@ -1777,7 +1777,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [7
 
 ] [8]
-<graphics/uml.png, id=134, 1237.62375pt x 1149.29375pt>
+<graphics/uml.png, id=141, 1237.62375pt x 1149.29375pt>
 File: graphics/uml.png Graphic file (type png)
 <use graphics/uml.png>
 Package luatex.def Info: graphics/uml.png  used on input line 35.
@@ -1791,15 +1791,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--47
 
 [9<./graphics/uml.png>]) (./chapters/evaluate.tex [10]
 chapter 4.
-) (./chapters/result.tex [11
+[11
 
-]
+]) (./chapters/result.tex [12]
 chapter 5.
-) (./chapters/conclusion.tex [12
+) (./chapters/conclusion.tex [13
 
 ]
 chapter 6.
-) [13
+) [14
 
 ]
 LaTeX Font Info:    Font shape `TU/RobotoMono(0)/m/n' will be
@@ -1808,7 +1808,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `RobotoMono' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [14
+ [15
 
 ]
 
@@ -1831,7 +1831,7 @@ Package tudapub Warning: You did not provide a Label for key discussion.
 (tudapub)                Either you need to recompile your document or add a
 (tudapub)                label using \IMRADlabel.
 
-[15] (./Thesis_Jingyi.aux)
+[16] (./Thesis_Jingyi.aux)
 Package rerunfilecheck Info: File `Thesis_Jingyi.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'Thesis_Jingyi.run.xml'.
@@ -1840,18 +1840,18 @@ Package logreq Info: Writing requests to 'Thesis_Jingyi.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 33606 strings out of 478531
+ 33615 strings out of 478531
  100000,1977958 words of node,token memory allocated
- 5603 words of node memory still in use:
-   77 hlist, 8 vlist, 13 rule, 25 disc, 19 local_par, 6 math, 142 glue, 27 kern, 31 penalty, 4 margin_kern, 270 glyph, 187 attribute, 70 glue_spec, 103 attribute_list, 1 write, 7 pdf_action, 28 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
-   avail lists: 1:2,2:1395,3:425,4:108,5:982,6:112,7:7509,8:76,9:530,10:22,11:606
- 52304 multiletter control sequences out of 65536+600000
+ 5596 words of node memory still in use:
+   77 hlist, 8 vlist, 13 rule, 25 disc, 19 local_par, 6 math, 142 glue, 27 kern, 31 penalty, 4 margin_kern, 269 glyph, 187 attribute, 70 glue_spec, 103 attribute_list, 1 write, 7 pdf_action, 28 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
+   avail lists: 1:2,2:1395,3:425,4:108,5:982,6:124,7:7509,8:76,9:564,10:25,11:606
+ 52308 multiletter control sequences out of 65536+600000
  128 fonts using 19470527 bytes
  125i,19n,148p,10708b,2657s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/opentype/google/roboto/RobotoMono-Regular.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/xcharter/XCharter-Italic.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/xcharter/XCharter-Roman.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/google/roboto/Roboto-Bold.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/google/roboto/Roboto-Regular.otf>
-Output written on Thesis_Jingyi.pdf (15 pages, 756635 bytes).
+Output written on Thesis_Jingyi.pdf (16 pages, 765626 bytes).
 
-PDF statistics: 282 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 131072)
- 136 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 307 PDF objects out of 1000 (max. 8388607)
+ 65 named destinations out of 1000 (max. 131072)
+ 168 words of extra memory for PDF output out of 10000 (max. 100000000)
 

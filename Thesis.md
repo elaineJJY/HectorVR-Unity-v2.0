@@ -41,7 +41,7 @@ Among them, VR has gained a lot of attention due to its immersion and the intera
 
 The use of VR in human-computer collaboration also has the potential. In terms of reliability, VR is reliable as a novel alternative to human-robot interaction. The interaction tasks that users can accomplish with VR devices do not differ significantly from those using real operating systems\cite{Villani:2018ub}. In terms of user experience and operational efficiency, VR displays can provide users with stereo viewing cues, which makes collaborative human-robot interaction tasks in certain situations more efficient and performance better \cite{Liu:2017tw}.
 
-However, there remains a need to explore human-computer interaction patterns and improve the level of human-computer integration\cite{Wang:2017uy}. Intuitive and easy-to-use interaction methods can enable the user to explore the environment as intentionally as possible and improve the efficiency of search and rescue.
+However, there remains a need to explore human-computer interaction patterns and improve the level of human-computer integration\cite{Wang:2017uy}. Intuitive and easy-to-use interaction patterns can enable the user to explore the environment as intentionally as possible and improve the efficiency of search and rescue. The appropriate interaction method should cause less mental and physical exhaustion, which also extends the length of an operation, making it less necessary for the user to frequently exit the VR environment for rest.
 
 
 
@@ -62,18 +62,18 @@ However, there remains a need to explore human-computer interaction patterns and
 >
 > - General content of the survey
 
-For this purpose, this paper presents a preliminary VR-based system for the simulation of ground rescue robots with four different modes of operation and corresponding test scenes imitating a post-disaster city. The test scene simulates a robot collaborating with Unity to construct a virtual 3D scene. The robot has a simulated radar, which makes the display of the scene dependent on the robot's movement. In order to find a control method that is as intuitive and low mental fatigue as possible, a user survey was executed after the development was completed.
+For this purpose, this paper presents a preliminary VR-based system for the simulation of ground rescue robots with four different modes of operation and corresponding test scenes imitating a post-disaster city. The test scene simulates a robot collaborating with Unity to construct a virtual 3D scene. The robot has a simulated radar, which makes the display of the scene dependent on the robot's movement. In order to find an interaction approach that is as intuitive and low mental fatigue as possible, a user study was executed after the development was completed.
 
 
 
 > ##### Paper Architecture
 
-Section \ref{*i*mplementation} provides details of the purposed system, including the techniques used for the different interaction modes and the structure of the test scenes.
-Section \ref{evaluate} will talk about the design and process of user study.
+Chapter \ref{*i*mplementation} provides details of the purposed system, including the techniques used for the different interaction modes and the structure of the test scenes.
+Chapter \ref{evaluate} will talk about the design and process of user study.
 
-Section \ref{result} presents the results of the user study and analyzes the advantages and disadvantages of the different modes of operation and the directions for improvement.
+Chapter \ref{result} presents the results of the user study and analyzes the advantages and disadvantages of the different modes of operation and the directions for improvement.
 
-Finally, in Section \ref{conclusion}, conclusions and future work are summarized.
+Finally, in Chapter \ref{conclusion}, conclusions and future work are summarized.
 
 
 
@@ -126,7 +126,7 @@ Unity was chosen as the platform to develop the system. Unity is a widely used g
 >
 > information
 
-To simulate the process of a robot using a probe camera to detect the real environment and synchronise it to Unity, a conical collision body was set up on the robot. The robot will transform the Layers of the objects in the scene into visible Layers by collision detection as it is driving. In addition, the robot's driving performance, such as the number of collisions, average speed, total distance, etc., will be recorded in each test. The detailed recorded information can be seen in Fig.\ref{fig:uml}. The movement of the robot depends on the value of the signal that is updated in each mode. In addition, the robot's Gameobject has the NavMeshAgent \footnote{https://docs.unity3d.com/ScriptReference/AI.NavMeshAgent.html} component, which supports the robot's navigation to the specified destination with automatic obstacle avoidance in the test scene.
+To simulate the process of a robot using a probe camera to detect the real environment and synchronise it to Unity, a conical collision body was set up on the robot. The robot will transform the Layers of the objects in the scene into visible Layers by collision detection and a trigger event (onTriggerEnter function). The robot's driving performance, such as the number of collisions, average speed, total distance, etc., will be recorded in each test. The detailed recorded information can be seen in Fig.\ref{fig:uml}. The movement of the robot depends on the value of the signal that is updated in each mode. In addition, the robot's Gameobject has the NavMeshAgent \footnote{https://docs.unity3d.com/ScriptReference/AI.NavMeshAgent.html} component, which supports the robot's navigation to the specified destination with automatic obstacle avoidance in the test scene. The virtual robot has three cameras. Each camera is set up in such a way that it can only see the area detected by the robot's radar and change the image bound to it in real time. The four operations described later all use the camera viewport as a monitoring screen by rendering the camera viewport on UI canvas.
 
 
 
@@ -162,6 +162,17 @@ In order to improve the reusability of the code and to facilitate the management
 > - functions: how to move robot, camera, map...
 > - photo
 
+In this mode, the user is controlling the robot's movement directly through the motion controller in the right hand. The touch pad of the motion controller determines the direction of rotation of the robot. The user can control the robot's driving speed by pulling the Trigger button. With the right-hand menu button, the surveillance screen around the robot can be turned on or off. The monitor window can be adjusted to a suitable position by dragging and rotating it. In the literature dealing with VR and human-computer collaboration, many researchers have used a similar operational approach. Therefore, as a widely used, and in a sense default operation approach, this mode was designed and became one of the proposed operation modes.
+
+```latex
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=12cm]{graphics/htc controller.png}
+    \caption{HTC handle illustration. The robot rotation direction will read the value of the touchpad X-axis. The range of values is $[-1,1]$. Forward speed reads the Trigger button passed in as a variable of type SteamVR_Action_Single, and the range of the variable is $[0,1]$.}
+    \label{fig:uml}
+\end{figure}
+```
+
 
 
 ##### 2. Lab Mode
@@ -170,7 +181,7 @@ In order to improve the reusability of the code and to facilitate the management
 > - functions: how to move robot, button, speed editor, auto drive 3 monitor....
 > - photo
 
-
+The original intention of designing this mode is that there is a part of the literature where the immersive human-robot collaborative framework are used to train operators how to operate the robot, avoiding risks and saving learning costs or directly as a platform for operating the robot \cite{Perez:2019ub}\cite{Matsas:2017vz}. Therefore, in this mode, a virtual laboratory environment is constructed, in which simulated buttons, controllers, and monitoring equipment are placed. The laboratory consists of two parts. The first part is the monitoring equipment: the monitoring screen is enlarged and placed at the front of the lab as a huge display. The second part is the operating console in the center of the laboratory, which can be moved by the user as desired. The user can use the buttons on the right side to lock the robot or let it walk forward automatically. In the middle of the console are two operating joysticks that determine the robot's forward motion and rotation respectively. The part that involves virtual joystick movement and button effects uses an open source github project VRtwix\footnote{https://github.com/rav3dev/vrtwix}. With the sliding stick on the left, the user can edit the speed of the robot's forward movement and rotation.
 
 ##### 3. Remote Mode
 
@@ -235,7 +246,7 @@ Before the beginning of the actual testing process, participants were informed o
 ##### Entering the world of VR
 
 > 1. wear the headset
-> 2. familiar with the menu : switch & select mode(practice)
+> 2. familiar with the menu : switch & select mode(practice) & close
 > 3. change position : teleport & raise or lower
 > 4. rescue 1 victim
 
@@ -243,17 +254,20 @@ After the basic introduction part, participants would directly put on the VR hea
 
 
 
-##### Practice and evaluation of patterns
+##### Practice and evaluation of modes
 
 > 1. `foreach Mode`:
->	1. enter mode(practice)
+> 	1. enter mode(practice)
 > 	2. try to move the robot
 > 	3. try to rescue 1-2 victims
 > 	4. enter test scene
 > 	5. -testing- 
 > 	6. Fill out the questionnaire: google form + TLX
-> 
-> 2. in the end: summary part of google form: like/dislike most. + reason + feedback
+>
+> 2. summary part of google form: 
+> 	- like/dislike most
+> 	- reason 
+> 	- feedback
 
 Given the different manipulation approaches for each mode, in order to avoid confusion between the different modes, participants would then take turns practicing and directly evaluating each mode immediately afterwards. The participant first switched to the mode of operation to be tested and manipulated the robot to move in that mode. After attempting to rescue 1-2 victim models and the participant indicated that he or she was familiar enough with this operation mode, the participant would enter the test scene. In the test scene, participants had to save as many victims as possible in a given time limit. Participants were required to move the robot around the test scene to explore the post-disaster city and to find and rescue victims. In this process, if the robot crashes with buildings, obstacles, etc., besides the collision information being recorded as test data, participants would also receive sound and vibration feedback. The test will automatically end when time runs out or when all the victims in the scene have been rescued. Participants were required to complete the evaluation questionnaire and the NASA evaluation form at the end of each test. This process was repeated in each mode of operation. 
 

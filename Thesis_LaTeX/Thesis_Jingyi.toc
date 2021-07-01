@@ -29,8 +29,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Evaluation of User Experience}{11}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Results}{12}{chapter.5}%
+\contentsline {section}{\numberline {4.1}Study Design}{11}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion and future work}{13}{chapter.6}%
+\contentsline {section}{\numberline {4.2}Procedure}{11}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Entering the world of VR}{11}{section.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Practice and evaluation of modes}{12}{section.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Results}{13}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Conclusion and future work}{14}{chapter.6}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
