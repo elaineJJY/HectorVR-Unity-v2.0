@@ -1,0 +1,116 @@
+\NewDocumentCommand{\newdualentry}{m m m m o o}{%
+	\IfValueTF{#5}
+	{\newglossaryentry{main-#1}{name={#3},%
+		text={#2\glsadd{#1}},%
+		description={\glsresetall#4}%
+	}%
+	\newacronym[longplural={#5}, shortplural={#6}]{#1}{#2\glsadd{main-#1}}{#3}
+	}
+	{\newglossaryentry{main-#1}{name={#3},%
+			text={#2\glsadd{#1}},%
+			description={\glsresetall#4}%
+		}%
+		\newacronym{#1}{#2\glsadd{main-#1}}{#3}
+	}
+}
+
+\newdualentry{crasar} % label
+{CRASAR}            % abbreviation
+{The Center for Robot-Assisted Search and Rescue}  % long form
+{\glsresetall A nonprofit corporation dedicated to unmanned systems technology for public safety. It aims to promote the effective use of unmanned systems by formal emergency management agencies.
+}% description
+
+
+\newdualentry{ar} % label
+{AR}            % abbreviation
+{Augmented Reality}  % long form
+{\glsresetall Using computer technology to superimpose virtual information onto the real world and display it through mobile phones, tablets and other devices, thus achieving a great fusion of the real and the virtual.
+}% description
+
+
+\newdualentry{vr} % label
+{VR}            % abbreviation
+{Virtual Reality}  % long form
+{\glsresetall Featuring immersion, interactivity and conceptualization. By simulating the functions of human sensory organs such as sight, hearing and touch, it allows people to immerse themselves in a computer-generated virtual world and to communicate in real time through language and gestures, enhancing the sense of entry and immersion.
+}% description
+
+\newdualentry{mr} % label
+{MR}            % abbreviation
+{Mixed Reality}  % long form
+{\glsresetall \gls{mr} enhances the realism of the user experience by introducing realistic scene information into the virtual environment, bridging the gap between the virtual world, the real world, and the user with interactive feedback information.
+}% description
+
+
+\newdualentry{lidar} % label
+{LiDAR}            % abbreviation
+{Light Detection and Ranging}  % long form
+{\glsresetall A laser-based remote sensing technology. It uses the laser as the light source and employs photoelectric detection technology. It can produce a map of the surveyed area known as a 3D point cloud.
+}% description
+
+
+\newdualentry{ros} % label
+{ROS}            % abbreviation
+{Robot Operating System}  % long form
+{\glsresetall A set of software libraries and tools for robotics. \gls{ros} provides various services for operating system applications (e.g.  hardware abstraction, underlying device control, common function implementation, inter-process messaging, package management, etc.), as well as tools and functions for acquiring, compiling, and running code across platforms. ROS mainly uses loosely coupled peer-to-peer process network communication and currently mainly supports Linux systems.
+}% description
+
+\newdualentry{tlx} % label
+{TLX}            % abbreviation
+{The Official NASA Task Load Index}  % long form
+{\glsresetall The NASA Task Load Questionnaire (NASA-TLX, NASA Task Load Index) is a subjective workload assessment tool whose primary purpose is to provide a subjective workload assessment of operators of various user interface systems. Using a multidimensional rating process, the total workload is divided into six subjective subscales. The user should choose the weighted score for each measurement. The simplified version, also called Raw TLX, has the same weighted score for all subscales and some of the subscales could be excluded. This simplified version is also used in this thesis.
+}% description
+
+
+%%%%%%%%%%%%%%%%%%%%%% Glossaryentry %%%%%%%%%%%%%%%%%%%%%%
+
+\newglossaryentry{hri}
+{name={Human-Robot Interaction},
+	description={\glsresetall A study of the interaction between humans and robots. It is a multidisciplinary field encompassing human–computer interaction, artificial intelligence, robotics, natural language understanding, design, and psychology.}
+}
+
+% \newglossaryentry{hrintergration}
+% {name={Human-Robot Integration},
+% 	description={\glsresetall xxxx }
+% }
+
+\newglossaryentry{hrc}
+{name={Human–Robot Collaboration},
+	description={\glsresetall A study of collaborative processes in human and robot agents work together. It includes classical robotics, human-computer interaction, artificial intelligence, design, cognitive sciences and psychology.}
+}
+
+
+% \newglossaryentry{rosk}
+% {name={ROS Kinect},
+% 	description={\glsresetall xx}
+% }
+
+\newglossaryentry{unity}
+{name={Unity},
+	description={\glsresetall Unity is a cross-platform game engine developed by Unity Technologies,  allowing users to easily create interactive content such as 3D video games, architectural visualizations, real-time 3D animation and other types of interactive content.}
+}
+
+\newglossaryentry{steamvr}
+{name={Steam VR plugin},
+	description={\glsresetall A Unity plugin from Valve Corporation. Applications developed using the SteamVR plugin can be adapted to mainstream PC VR software. The plugin simplifies these parts for developers: loading 3D models for VR controllers, handling input from these controllers, and estimating hand posture when using these controllers.}
+}
+
+\newglossaryentry{nav}
+{name={NavMeshAgent},
+	description={\glsresetall Navigation mesh agent provided by \gls{unity}. This component can be attached to game objects to intelligently navigate to a destination and avoid obstacles. Terrain and objects within the scene must be set to static and marked with a moveable range before being used.}
+}
+
+
+
+\newglossaryentry{htc}
+{name={HTC VIVE},
+	description={\glsresetall A virtual reality headset developed by HTC and Valve. It has a resolution of 1080×1200 per eye, resulting in a total resolution of 2160×1200 pixels, a refresh rate of 90 Hz, and a field of view of 110 degrees. It includes two motion controllers and uses two Lighthouses to help track the headset position and the motion controllers.}
+}
+
+
+
+
+
+
+\makeglossaries
+% Use glsunset to set the first-use-flag. This prevents gloassaries-extra to append the short form to the long form on first use.
+% Use this i.e. for entries where long and short form are identical.

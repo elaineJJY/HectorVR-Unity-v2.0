@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="arm_sensor_box">
+  <xacro:property name="M_PI" value="3.1415926535897931" />
+  <xacro:include filename="$(find hector_sensors_description)/urdf/flir_boson_640_8_7_mm.xacro"/>
+  <xacro:include filename="$(find hector_sensors_description)/urdf/realsense_d435_camera.urdf.xacro"/>
+  <xacro:include filename="$(find hector_sensors_description)/urdf/generic_camera.urdf.xacro"/>
+
+  <xacro:macro name="arm_sensor_box" params="parent name scaling *origin">
+    <joint name="${name}_joint_fixed" type="fixed">
+      <xacro:insert_block name="origin"/>
+      <parent link="${parent}"/>
+      <child link="${name}_link"/>
+    </joint>
+    
+    <link name="${name}_link">
+          <origin xyz="0 0 0" rpy="0 0 0"/>
+          <visual>
+            <origin xyz="0 -0.003 0" rpy="0 0 ${M_PI}"/>
+            <geometry>
+              <mesh filename="package://drz_telemax_description/meshes/arm_sensor_box_cover.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="Black"/>
+
+          </visual>
+
+        <collision>
+          <origin xyz="0 -0.04 0.0" rpy="0 0 0"/>
+          <geometry>
+            <box size="0.21 0.09 0.13"/>
+          </geometry>
+        </collision>
+    </link>
+
+    <xacro:flir_boson_640_camera parent="${name}_link" name="arm_thermal_cam">
+      <origin xyz="0.09 -0.023 0.0" rpy="${M_PI} 0.0 0.0"/>      
+    </xacro:flir_boson_640_camera>
+
+    <xacro:realsense_d435_camera_with_mount name="arm_rgbd_cam" parent="${name}_link">
+      <origin xyz="0.0875 -0.053 0.00143" rpy="${pi*0.5} 0 0"/>
+    </xacro:realsense_d435_camera_with_mount>
+
+    <xacro:generic_camera name="arm_wide_angle_cam" parent="${name}_link" ros_topic="/arm_wide_angle_cam/image_raw" cam_info_topic="/arm_wide_angle_cam/camera_info" update_rate="5" res_x="1920" res_y="1080" image_format="R8G8B8" hfov="130">
+      <origin xyz="0.095 -0.02133 -0.03768" rpy="${pi*0.5} 0 0"/>
+    </xacro:generic_camera>
+
+    <xacro:generic_camera name="arm_tele_cam" parent="${name}_link" ros_topic="/arm_tele_cam/image_raw" cam_info_topic="/arm_tele_cam/camera_info" update_rate="1" res_x="1920" res_y="1080" image_format="R8G8B8" hfov="40">
+      <origin xyz="0.09 -0.02133 0.03768" rpy="${pi*0.5} 0 0"/>
+    </xacro:generic_camera>
+
+  </xacro:macro>
+</robot>

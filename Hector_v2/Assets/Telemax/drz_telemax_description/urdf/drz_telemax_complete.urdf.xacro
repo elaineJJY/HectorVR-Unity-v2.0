@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="drz_telemax">
+  <xacro:include filename="$(find drz_telemax_description)/urdf/drz_telemax_base.urdf.xacro"/>
+  <xacro:include filename="$(find drz_telemax_description)/urdf/drz_telemax_arm.urdf.xacro"/>
+  <xacro:include filename="$(find drz_telemax_description)/urdf/drz_telemax_autonomy_box.urdf.xacro"/>
+  <xacro:include filename="$(find drz_telemax_description)/urdf/drz_telemax_arm_sensor_box.urdf.xacro"/>
+  
+  <!-- VLP-16 calibration -->
+  <xacro:include filename="$(find drz_telemax_description)/calibrations/spin_lidar_calibration.urdf.xacro"/>
+
+  <xacro:telemax_base/>
+  
+  <xacro:telemax_6dof_manipulator parent="base_link">
+    <origin xyz="0.225 0.0 0.24125" rpy="0 0 0" />
+  </xacro:telemax_6dof_manipulator>
+  
+  <xacro:autonomy_box parent="chassis_link" name="autonomy_box" scaling="0.001">
+    <origin xyz="-0.125 0.0 0.318" rpy="0.0 0.0 0.0"/>      
+  </xacro:autonomy_box>
+  
+  <xacro:arm_sensor_box parent="arm_link_4" name="arm_sensor_box" scaling="0.001">
+    <origin xyz="0.025 -0.058 0.0" rpy="0.0 0.0 0.0"/>      
+  </xacro:arm_sensor_box>
+</robot>

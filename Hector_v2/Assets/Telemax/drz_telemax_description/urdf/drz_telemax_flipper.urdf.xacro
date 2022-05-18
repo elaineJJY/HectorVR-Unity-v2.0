@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="$(find hector_xacro_tools)/urdf/inertia_tensors.urdf.xacro" />
+
+  <xacro:property name="telemax_track_width" value="0.06"/>
+  <xacro:property name="telemax_track_height" value="0.0187"/>
+
+  <xacro:property name="telemax_main_wheel_radius" value="${0.272 / 2.0}"/>
+  <xacro:property name="telemax_tip_wheel_radius" value="${0.172 / 2.0}"/>
+  <xacro:property name="telemax_small_wheel_radius" value="${0.0862}"/>
+
+  <xacro:property name="flipper_max_vel_deg" value="12"/>
+
+  <xacro:macro name="telemax_flipper" params="name parent front left *origin">
+    <joint name="${name}_joint" type="revolute">
+      <xacro:insert_block name="origin" />
+<!--       <origin xyz="${0.205*front} 0 0.085"/> -->
+      <axis xyz="0 ${front} 0" />
+      <anchor xyz="0 0 0" />
+<!--      <limit upper="${80.0/180.0*M_PI}" lower="${-M_PI/2}" velocity="0.262745098" effort="1000"/>-->
+      <limit upper="${M_PI/2}" lower="${-M_PI/2}" velocity="${flipper_max_vel_deg*M_PI/180.0}" effort="1000"/>
+      <parent link="${parent}"/>
+      <child link="${name}_link"/>
+    </joint>
+    <link name="${name}_link">
+      <!-- TODO intertial -->
+      <xacro:inertial_cuboid_with_pose mass="5" x_length="${0.497}" y_length="${telemax_track_width}" z_length="${telemax_tip_wheel_radius*2}" >
+        <origin xyz="${0.497 / 2.0} 0 0" rpy="0 0 0"/>
+      </xacro:inertial_cuboid_with_pose>
+
+      <visual>
+        <origin xyz="0 ${front * left * -0.17} 0" rpy="${M_PI/2} ${M_PI} ${M_PI}"/>
+        <geometry>
+          <mesh filename="package://drz_telemax_description/meshes/flipper.dae" scale="${0.001} 0.001 ${0.001 * left * front}"/>
+        </geometry>
+      </visual>
+
+      <!-- *** Collision geometry ***-->
+      <!-- Main wheel -->
+      <collision>
+        <origin xyz="0 0 0" rpy="${M_PI/2} 0 0"/>
+        <geometry>
+          <cylinder length="${telemax_track_width}" radius="${telemax_main_wheel_radius}"/>
+        </geometry>
+      </collision>
+      <!-- Tip wheel -->
+      <collision>
+        <origin xyz="0.497 0 0.051" rpy="${M_PI/2} 0 0"/>
+        <geometry>
+          <cylinder length="${telemax_track_width}" radius="${telemax_tip_wheel_radius}"/>
+        </geometry>
+      </collision>
+      <!-- Small wheel -->
+      <collision>
+        <origin xyz="0.165 0 -0.0763" rpy="${M_PI/2} 0 0"/>
+        <geometry>
+          <cylinder length="${telemax_track_width}" radius="${telemax_small_wheel_radius}"/>
+        </geometry>
+      </collision>
+
+      <!-- Track between main wheel and small wheel -->
+      <collision>
+        <origin xyz="0.0674 0 -0.139" rpy="0 0.15 0"/>
+        <geometry>
+          <box size="0.174 ${telemax_track_width} ${telemax_track_height}"/>
+        </geometry>
+      </collision>
+
+      <!-- Track between small wheel and tip wheel -->
+      <collision>
+        <origin xyz="0.358 0 -0.085" rpy="0 -0.364 0"/>
+        <geometry>
+          <box size="0.355 ${telemax_track_width} ${telemax_track_height}"/>
+        </geometry>
+      </collision>
+
+      <!-- Track on top of the flipper -->
+      <collision>
+        <origin xyz="0.25 0 ${telemax_main_wheel_radius - 0.5*telemax_track_height}" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.5 ${telemax_track_width} ${telemax_track_height}"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <!--Needed for gazebo-->
+    <transmission name="${name}_joint_transmission">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="${name}_joint">
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="${name}_joint_motor">
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+  </xacro:macro>
+</robot>

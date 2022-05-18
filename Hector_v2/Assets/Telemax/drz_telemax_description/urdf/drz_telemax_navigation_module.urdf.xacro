@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="navigation_module">
+  <xacro:include filename="$(find drz_telemax_description)/urdf/materials.urdf.xacro"/>
+
+  <xacro:property name="M_PI" value="3.1415926535897931" />
+  <xacro:include filename="$(find hector_components_description)/urdf/vlp16_mount.urdf.xacro.xml"/>
+  <xacro:include filename="$(find hector_sensors_description)/urdf/realsense_d435_camera.urdf.xacro"/>
+  <xacro:include filename="$(find hector_sensors_description)/urdf/camera360.urdf.xacro"/>
+
+  <xacro:property name="navigation_module_length" value="0.316"/>
+  <xacro:property name="navigation_module_width" value="0.225"/>
+  <xacro:property name="navigation_module_height" value="0.0062"/>
+  <xacro:property name="navigation_module_cage_height" value="0.319"/>
+  <xacro:property name="navigation_module_cage_width" value="0.225"/>
+
+  <xacro:property name="alu_profile_side_length" value="0.02"/>
+  <xacro:property name="alu_profile_padding" value="0.0"/>
+
+  <xacro:property name="navigation_module_cage_x" value="${-0.14}"/>
+  <xacro:property name="navigation_module_cage_y" value="${navigation_module_cage_width/2 - alu_profile_side_length/2}"/>
+
+  <xacro:property name="navigation_module_camera360_mount_length" value="0.045"/>
+
+  <xacro:macro name="navigation_module" params="parent name scaling *origin">
+    <joint name="${name}_joint_fixed" type="fixed">
+      <xacro:insert_block name="origin"/>
+      <parent link="${parent}"/>
+      <child link="${name}_link"/>
+    </joint>
+
+    <link name="${name}_link">
+      <!-- Plate -->
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${navigation_module_length} ${navigation_module_width} ${navigation_module_height}"/>
+        </geometry>
+        <material name="Gray"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${navigation_module_length} ${navigation_module_width} ${navigation_module_height}"/>
+        </geometry>
+        <material name="Gray"/>
+      </collision>
+
+      <!-- Protection Vertical Profiles -->
+      <visual>
+        <origin xyz="${navigation_module_cage_x} ${navigation_module_cage_y} ${navigation_module_height/2 + navigation_module_cage_height/2}" rpy="0 0 0"/>
+        <geometry>
+          <box size="${alu_profile_side_length} ${alu_profile_side_length} ${navigation_module_cage_height}"/>
+        </geometry>
+        <material name="Gray"/>
+      </visual>
+      <visual>
+        <origin xyz="${navigation_module_cage_x} ${-1 * navigation_module_cage_y} ${navigation_module_height/2 + navigation_module_cage_height/2}" rpy="0 0 0"/>
+        <geometry>
+          <box size="${alu_profile_side_length} ${alu_profile_side_length} ${navigation_module_cage_height}"/>
+        </geometry>
+        <material name="Gray"/>
+      </visual>
+
+      <collision>
+        <origin xyz="${navigation_module_cage_x} ${navigation_module_cage_y} ${navigation_module_height/2 + navigation_module_cage_height/2}" rpy="0 0 0"/>
+        <geometry>
+          <box size="${alu_profile_side_length + alu_profile_padding} ${alu_profile_side_length + alu_profile_padding} ${navigation_module_cage_height}"/>
+        </geometry>
+        <material name="Gray"/>
+      </collision>
+      <collision>
+        <origin xyz="${navigation_module_cage_x} ${-1 * navigation_module_cage_y} ${navigation_module_height/2 + navigation_module_cage_height/2}" rpy="0 0 0"/>
+        <geometry>
+          <box size="${alu_profile_side_length + alu_profile_padding} ${alu_profile_side_length + alu_profile_padding} ${navigation_module_cage_height}"/>
+        </geometry>
+        <material name="Gray"/>
+      </collision>
+
+      <!-- Horizontal Profile -->
+      <visual>
+        <origin xyz="${navigation_module_cage_x} 0 ${navigation_module_height/2 + navigation_module_cage_height - alu_profile_side_length/2}" rpy="0 0 0"/>
+        <geometry>
+          <box size="${alu_profile_side_length} ${navigation_module_cage_width} ${alu_profile_side_length}"/>
+        </geometry>
+        <material name="Gray"/>
+      </visual>
+      <collision>
+        <origin xyz="${navigation_module_cage_x} 0 ${navigation_module_height/2 + navigation_module_cage_height - alu_profile_side_length/2}" rpy="0 0 0"/>
+        <geometry>
+          <box size="${alu_profile_side_length} ${navigation_module_cage_width} ${alu_profile_side_length + alu_profile_padding}"/>
+        </geometry>
+        <material name="Gray"/>
+      </collision>
+
+      <!-- Camera360 alu mount -->
+      <visual>
+        <origin xyz="${navigation_module_cage_x} 0 ${navigation_module_height/2 + navigation_module_cage_height + navigation_module_camera360_mount_length/2}" rpy="0 0 0"/>
+        <geometry>
+          <box size="${alu_profile_side_length} ${alu_profile_side_length} ${navigation_module_camera360_mount_length} "/>
+        </geometry>
+        <material name="Gray"/>
+      </visual>
+      <collision>
+        <origin xyz="${navigation_module_cage_x} 0 ${navigation_module_height/2 + navigation_module_cage_height + navigation_module_camera360_mount_length/2}" rpy="0 0 0"/>
+        <geometry>
+          <box size="${alu_profile_side_length} ${alu_profile_side_length} ${navigation_module_camera360_mount_length} "/>
+        </geometry>
+        <material name="Gray"/>
+      </collision>
+    </link>
+
+
+    <gazebo reference="${name}_link">
+      <material>Gazebo/Grey</material>
+    </gazebo> 
+
+    <!-- Realsense D435 -->
+    <xacro:realsense_d435_camera_with_mount parent="${name}_link" name="realsense_d435_back">
+      <origin xyz="${navigation_module_cage_x - alu_profile_side_length/2 - realsense_d435_depth + realsense_d435_mount_hole_to_front} 0 ${navigation_module_height/2 + navigation_module_cage_height - alu_profile_side_length/2 - realsense_d435_height/2.0}" rpy="0 0 ${M_PI}"/>
+    </xacro:realsense_d435_camera_with_mount>
+
+
+    <!-- Spinning VLP16 -->
+    <xacro:spinning_sensor_mount_macro parent="${name}_link" name="spin_lidar" scaling="0.001">
+      <origin xyz="${navigation_module_cage_x + 0.04} 0 0.2154" rpy="0.0 0.0 0.0"/>
+    </xacro:spinning_sensor_mount_macro>
+
+    <!-- Insta360 camera -->
+    <xacro:camera360 name="camera360" right_cam_name="right" left_cam_name="left" parent="${name}_link" collision_radius="0.04" dist_between_cameras="-0.03850784" ros_topic="image_raw" update_rate="10" res_x="1504" res_y="1504" image_format="R8G8B8" fov="3.14">
+      <origin xyz="${navigation_module_cage_x} 0 ${navigation_module_height/2 + navigation_module_cage_height + navigation_module_camera360_mount_length + visual_radius} " rpy="0 0 1.57"/> <!-- insta #3 -->
+      <origin xyz="0.00009742  0.00061696 -0.03850784" rpy="3.1373499 -0.0021358 -3.1279404"/> <!-- cam to cam transform (calibration by kalibr) -->
+    </xacro:camera360>
+  </xacro:macro>
+</robot>

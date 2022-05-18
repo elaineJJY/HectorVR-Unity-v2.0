@@ -1,0 +1,5 @@
+id,participant,condition,mental-demand,physical-demand,temporal-demand,performance,effort,frustration,total,time
+1,HectorVR-9,Handle,85,15,15,25,75,25,40,2021-07-17 15:08:11
+2,HectorVR-9,Lab,25,45,65,75,75,35,53.33333,2021-07-17 15:23:08
+3,HectorVR-9,Remote,15,15,35,90,25,15,32.5,2021-07-17 15:34:13
+4,HectorVR-9,UI,35,45,35,65,55,65,50,2021-07-17 15:45:15

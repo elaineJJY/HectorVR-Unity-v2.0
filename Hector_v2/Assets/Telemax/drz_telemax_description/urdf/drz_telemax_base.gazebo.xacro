@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="telemax_base_gazebo_plugins">
+    <!-- Base link gazebo properties TODO should this be chassis link?-->
+    <!--  <gazebo reference="base_link">
+    <mu1>0.0</mu1>
+    <mu2>0.0</mu2>
+    <kp>1000000.0</kp>
+    <kd>100.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>1.0</maxVel>
+    </gazebo>-->
+    <gazebo>
+      <!-- Publish ground truth -->
+      <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>50.0</updateRate>
+        <bodyName>base_link</bodyName>
+        <topicName>ground_truth/state</topicName>
+        <gaussianNoise>0.01</gaussianNoise>
+        <frameName>world</frameName>
+        <xyzOffsets>0 0 0</xyzOffsets>
+        <rpyOffsets>0 0 0</rpyOffsets>
+      </plugin>
+
+      <!-- IMU plugin -->
+      <plugin name="imu_controller" filename="libhector_gazebo_ros_imu.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>50.0</updateRate>
+        <bodyName>base_link</bodyName>
+        <topicName>imu/data</topicName>
+        <accelDrift>0.0 0.0 0.0</accelDrift>
+        <accelGaussianNoise>0.1 0.1 0.1</accelGaussianNoise>
+        <rateDrift>0.0 0.0 0.0</rateDrift>
+        <rateGaussianNoise>0.05 0.05 0.05</rateGaussianNoise>
+        <headingDrift>0.0</headingDrift>
+        <headingGaussianNoise>0.05</headingGaussianNoise>
+      </plugin>
+    </gazebo>
+  </xacro:macro>
+
+
+  <xacro:macro name="tracked_vehicle_gazebo_plugin" params="tracks_separation">
+    <gazebo reference="main_track_left_fixed_joint">
+      <preserveFixedJoint>true</preserveFixedJoint>
+    </gazebo>
+
+    <gazebo reference="main_track_right_fixed_joint">
+      <preserveFixedJoint>true</preserveFixedJoint>
+    </gazebo>
+
+    <xacro:set_track_gazebo_properties link="flipper_front_left_link"/>
+    <xacro:set_track_gazebo_properties link="flipper_back_left_link"/>
+    <xacro:set_track_gazebo_properties link="flipper_front_right_link"/>
+    <xacro:set_track_gazebo_properties link="flipper_back_right_link"/>
+
+
+    <gazebo>
+      <plugin filename="libgazebo_ros_tracked_vehicle_plugin.so" name="multi_tracked_vehicle">
+        <command_topic>/cmd_vel_raw</command_topic>
+        <body>base_link</body>
+        <left_track0>flipper_front_left_link</left_track0>
+        <left_track1>flipper_back_left_link</left_track1>
+        <right_track0>flipper_front_right_link</right_track0>
+        <right_track1>flipper_back_right_link</right_track1>
+        <track_mu>0.7</track_mu>
+        <track_mu2>150</track_mu2>
+        <tracks_separation>${tracks_separation}</tracks_separation>
+        <steering_efficiency>0.5</steering_efficiency>
+        <max_linear_speed>1.0</max_linear_speed>
+        <max_angular_speed>1.0</max_angular_speed>
+      </plugin>
+
+      <plugin filename="libkeys_to_cmd_vel_plugin.so" name="keyboard_control">
+        <cmd_vel_topic>~/robot_description_gazebo/cmd_vel</cmd_vel_topic>
+      </plugin>
+    </gazebo>
+  </xacro:macro>
+
+  <xacro:macro name="set_track_gazebo_properties" params="link">
+    <gazebo reference="${link}">
+      <!--      <mu1>0.0</mu1>
+      <mu2>0.0</mu2>
+      <kp>1000000.0</kp>
+      <kd>100.0</kd>
+      <minDepth>0.001</minDepth>
+      <maxVel>1.0</maxVel>-->
+    </gazebo>
+  </xacro:macro>
+
+  <xacro:macro name="force_based_move_gazebo_plugin">
+    <plugin name="force_based_move_controller" filename="libgazebo_ros_force_based_move.so">
+      <commandTopic>/cmd_vel_raw</commandTopic>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <odometryRate>20.0</odometryRate>
+      <robotBaseFrame>base_link</robotBaseFrame>
+      <yaw_velocity_p_gain>500</yaw_velocity_p_gain>
+      <x_velocity_p_gain>3000</x_velocity_p_gain>
+      <y_velocity_p_gain>3000</y_velocity_p_gain>
+      <publishOdometryTf>1</publishOdometryTf>
+    </plugin>
+  </xacro:macro>
+
+  <xacro:macro name="gazebo_ros_control_plugin">
+    <gazebo>
+      <!-- Gazebo ros control -->
+      <plugin name="gazebo_ros_control_select_joints" filename="libgazebo_ros_control_select_joints.so">
+        <robotNamespace>telemax_control</robotNamespace>
+        <joints>arm_joint_0 arm_joint_1 arm_joint_2 arm_joint_3 arm_joint_4 arm_joint_5 gripper_joint flipper_front_left_joint flipper_front_right_joint flipper_back_left_joint flipper_back_right_joint</joints>
+      </plugin>
+    </gazebo>
+  </xacro:macro>
+</robot>

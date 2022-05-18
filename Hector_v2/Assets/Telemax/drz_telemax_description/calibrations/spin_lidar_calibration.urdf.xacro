@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:property name="vlp16_calibration">
+    <xacro:include filename="$(find drz_telemax_description)/calibrations/vlp16_calibration.urdf.xacro"/>
+  </xacro:property>
+  
+</robot>

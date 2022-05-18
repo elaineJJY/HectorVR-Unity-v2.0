@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:property name="M_PI" value="3.1415926535897931" />
+  <xacro:include filename="$(find drz_telemax_description)/urdf/drz_telemax_flipper.urdf.xacro"/>
+  <xacro:include filename="$(find drz_telemax_description)/urdf/drz_telemax_base.gazebo.xacro"/>
+  <xacro:include filename="$(find hector_xacro_tools)/urdf/inertia_tensors.urdf.xacro" />
+
+  <xacro:property name="telemax_chassis_width" value="0.27" />
+  <xacro:property name="telemax_chassis_length" value="0.65" />
+  <xacro:property name="telemax_chassis_height" value="0.2" />
+
+  <xacro:property name="telemax_flipper_x_offset" value="0.205"/>
+  <xacro:property name="telemax_flipper_y_offset" value="0.17"/>
+  <xacro:property name="telemax_flipper_z_offset" value="0.085"/>
+  <xacro:macro name="telemax_base">
+    <link name="base_link"/>
+
+    <joint name="chassis_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <parent link="base_link"/>
+      <child link="chassis_link" />
+    </joint>
+
+    <!-- robot chassis link -->
+    <link name="chassis_link">
+      <xacro:inertial_cuboid_with_pose mass="40" x_length="${telemax_chassis_length}" y_length="${telemax_chassis_width}" z_length="${telemax_chassis_height}" >
+        <origin xyz="0 0 0.05" rpy="0 0 0"/>
+      </xacro:inertial_cuboid_with_pose>
+
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://drz_telemax_description/meshes/maxpro_chassis.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      
+      <visual>
+        <origin xyz="-0.125 0.0 0.225" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://drz_telemax_description/meshes/battery.dae" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+
+      <collision>
+        <origin xyz="0 0 0.105" rpy="0 0 0"/>
+        <geometry>
+          <box size="${telemax_chassis_length} ${telemax_chassis_width} ${telemax_chassis_height}"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <xacro:telemax_flipper name="flipper_front_left" parent="chassis_link" front="1" left="1">
+      <origin xyz="${telemax_flipper_x_offset} ${telemax_flipper_y_offset} ${telemax_flipper_z_offset}" rpy="0 0 0"/>
+    </xacro:telemax_flipper>
+    <xacro:telemax_flipper name="flipper_front_right" parent="chassis_link" front="1" left="-1">
+      <origin xyz="${telemax_flipper_x_offset} ${-1 * telemax_flipper_y_offset} ${telemax_flipper_z_offset}" rpy="0 0 0"/>
+    </xacro:telemax_flipper>
+    <xacro:telemax_flipper name="flipper_back_left" parent="chassis_link" front="-1" left="1">
+      <origin xyz="${-1 * telemax_flipper_x_offset} ${telemax_flipper_y_offset} ${telemax_flipper_z_offset}" rpy="0 0 ${M_PI}"/>
+    </xacro:telemax_flipper>
+    <xacro:telemax_flipper name="flipper_back_right" parent="chassis_link" front="-1" left="-1">
+      <origin xyz="${-1 * telemax_flipper_x_offset} ${-1 * telemax_flipper_y_offset} ${telemax_flipper_z_offset}" rpy="0 0 ${M_PI}"/>
+    </xacro:telemax_flipper>
+
+    <!-- Gazebo plugins -->
+    <xacro:telemax_base_gazebo_plugins/>
+    <xacro:tracked_vehicle_gazebo_plugin tracks_separation="${2* telemax_flipper_y_offset}"/>
+    <xacro:gazebo_ros_control_plugin/>
+  </xacro:macro>
+
+</robot>

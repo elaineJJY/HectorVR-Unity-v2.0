@@ -1,0 +1,5 @@
+participant,condition,Remained Time,Collision,Drive Distance,Total driving time,Adverage speed,Rescued Target,Remained Visible Target,Remained Unvisible Target,time
+11,RemoteTest,0,2,424.6442,107.2922,3.957829,7,2,1,2021/7/17 16:59
+11,UITest,39,1,571.3905,147.8818,3.863832,10,0,0,2021/7/17 17:17
+11,HandleTest,0,30,638.7712,156.522,4.081032,6,4,0,2021/7/17 18:18
+11,LabTest,0,35,711.0004,278.0309,2.557271,3,6,1,2021/7/17 18:36
